@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\App.xaml
-3-169994237
+11407045341
 
-7-14074035
+3-1233169557
 194-1951243044
-Menus\Login.xaml;Menus\Register.xaml;PageSwitcher.xaml;
+MainWindow.xaml;
 
 True
 

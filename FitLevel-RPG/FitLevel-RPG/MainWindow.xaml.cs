@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FitLevel_RPG.Menus
+namespace FitLevel_RPG
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Login 
+    public partial class MainWindow : Window
     {
-        public Login()
+        public MainWindow()
         {
-            this.InitializeComponent();
-        }
-
-        public void UtilizeState(object state)
-        {
-            throw new NotImplementedException();
+            InitializeComponent();
         }
     }
 }
