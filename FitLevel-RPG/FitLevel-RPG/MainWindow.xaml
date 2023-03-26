@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:FitLevel_RPG"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+        <TextBlock Text="Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"></TextBlock>
 
+        <StackPanel Orientation="Horizontal" Height ="35" HorizontalAlignment="Center">
+            <Button Content="Register" Click="BtnClickLRegister"></Button>
+        </StackPanel>
     </Grid>
 </Window>

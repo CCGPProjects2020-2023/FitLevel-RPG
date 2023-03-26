@@ -22,7 +22,18 @@ namespace FitLevel_RPG
     {
         public MainWindow()
         {
-            InitializeComponent();
+           // InitializeComponent();
+
+            NavigationWindow navigationWdw = new NavigationWindow();
+            navigationWdw.Height = this.Height;
+            navigationWdw.Width = this.Width;
+            navigationWdw.Show();
+            navigationWdw.Navigate(new Login());
+        }
+
+        private void BtnClickLRegister(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Register();
         }
     }
 }
