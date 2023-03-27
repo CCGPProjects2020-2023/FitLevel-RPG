@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="PasswordReset\ChangePassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -11,11 +14,17 @@
     <Compile Update="Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ResetPassword.xaml.cs">
+    <Compile Update="PasswordReset\ResetPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PasswordReset\VerifyCode.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="PasswordReset\ChangePassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Dashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -25,7 +34,10 @@
     <Page Update="Register.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ResetPassword.xaml">
+    <Page Update="PasswordReset\ResetPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PasswordReset\VerifyCode.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

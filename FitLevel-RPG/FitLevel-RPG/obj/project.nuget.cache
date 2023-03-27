@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PyqwmvguVhuvfKYsz/xc/q6C5bCCIWS3tYqZwr1ArgtvrEbxACQryYkI7UzxAx3DtraSXYLp9orE1AjIKfU9Mw==",
+  "dgSpecHash": "s4VEl4iyM0SaRLk20KfgNZmO0XjRtiaNiDSgMabgo8q63hdFhYllD/Y3RHYJ8XGI+rRl9yPYiLPYoJLh/kEhsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG2\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+  "projectFilePath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evanm\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\evanm\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

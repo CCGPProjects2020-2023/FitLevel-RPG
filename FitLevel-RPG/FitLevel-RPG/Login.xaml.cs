@@ -76,7 +76,7 @@ namespace FitLevel_RPG
 
         private void ForgotPasswordClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("ResetPassword.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("./PasswordReset/ResetPassword.xaml", UriKind.Relative));
         }
     }
 

@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0-DEVBUILD",
     "restore": {
-      "projectUniqueName": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG2\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+      "projectUniqueName": "C:\\Users\\evanm\\Source\\Repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
       "projectName": "FitLevel-RPG",
-      "projectPath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG2\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+      "projectPath": "C:\\Users\\evanm\\Source\\Repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
       "packagesPath": "C:\\Users\\evanm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG2\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
+      "outputPath": "C:\\Users\\evanm\\Source\\Repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
