@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:FitLevel_RPG"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid>
         <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
         <TextBlock Text="Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"></TextBlock>
 
-        <StackPanel Orientation="Horizontal" Height ="35" HorizontalAlignment="Center">
-            <Button Content="Register" Click="BtnClickLRegister"></Button>
-        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142"/>
+        <TextBox x:Name="TextboxUsername" HorizontalAlignment="Left" Margin="371,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextboxPassword" HorizontalAlignment="Left" Margin="371,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="LabelUsername" Content="Username:" HorizontalAlignment="Left" Margin="305,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelPassword" Content="Password:" HorizontalAlignment="Left" Margin="308,150,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockForgotPassword" HorizontalAlignment="Left" Margin="277,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"><Hyperlink NavigateUri="ResetPassword.xaml"><Run Text="Forgot Password?"/></Hyperlink></TextBlock>
+        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="400,194,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLLogin"/>
+        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="400,227,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLRegister"/>
+
+
     </Grid>
 </Window>

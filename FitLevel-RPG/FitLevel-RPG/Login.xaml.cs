@@ -24,5 +24,16 @@ namespace FitLevel_RPG
         {
             InitializeComponent();
         }
+
+        private void BtnClickLRegister(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnClickLLogin(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+
 }

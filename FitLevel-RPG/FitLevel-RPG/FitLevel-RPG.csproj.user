@@ -8,12 +8,18 @@
     <Compile Update="Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ResetPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResetPassword.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
