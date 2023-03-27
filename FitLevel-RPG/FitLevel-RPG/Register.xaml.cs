@@ -20,9 +20,23 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class Register : Page
     {
+
         public Register()
         {
             InitializeComponent();
+        }
+
+        private void RegisterButtonClick(object sender, RoutedEventArgs e)
+        {
+          
+            MessageBox.Show("Fake Register Success.");
+            NavigationService.Navigate(new Uri("Login.xaml", UriKind.Relative));
+
+        }
+
+        private void CancelButtonClick(object sender, RoutedEventArgs e)
+        {           
+            NavigationService.Navigate(new Uri("Login.xaml", UriKind.Relative));
         }
     }
 }

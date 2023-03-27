@@ -27,12 +27,17 @@ namespace FitLevel_RPG
 
         private void BtnClickLRegister(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("Register.xaml", UriKind.Relative));
         }
 
         private void BtnClickLLogin(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Fake Login Failed. No connections made.", "Placeholder Warning");
+        }
 
+        private void ForgotPasswordClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("ResetPassword.xaml", UriKind.Relative));
         }
     }
 

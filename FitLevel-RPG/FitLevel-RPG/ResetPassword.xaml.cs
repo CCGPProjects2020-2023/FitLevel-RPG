@@ -17,7 +17,7 @@ namespace FitLevel_RPG
     /// <summary>
     /// Interaction logic for ResetPassword.xaml
     /// </summary>
-    public partial class ResetPassword : Window
+    public partial class ResetPassword : Page
     {
         public ResetPassword()
         {

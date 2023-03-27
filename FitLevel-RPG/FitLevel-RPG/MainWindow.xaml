@@ -5,20 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitLevel_RPG"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
-        <TextBlock Text="Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"></TextBlock>
-
+        <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,-2,684,249"/>
         <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142"/>
-        <TextBox x:Name="TextboxUsername" HorizontalAlignment="Left" Margin="371,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TextboxPassword" HorizontalAlignment="Left" Margin="371,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="LabelUsername" Content="Username:" HorizontalAlignment="Left" Margin="305,105,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LabelPassword" Content="Password:" HorizontalAlignment="Left" Margin="308,150,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlockForgotPassword" HorizontalAlignment="Left" Margin="277,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"><Hyperlink NavigateUri="ResetPassword.xaml"><Run Text="Forgot Password?"/></Hyperlink></TextBlock>
-        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="400,194,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLLogin"/>
-        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="400,227,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLRegister"/>
 
+        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="7,14,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLLogin" Height="41"/>
+        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="7,66,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="121,66,-5,0" Source="/Login.xaml" Height="368" Width="684"/>
+        <TextBlock x:Name="TextBlockHeader" HorizontalAlignment="Left" Margin="223,1,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="501" FontSize="18"/>
 
     </Grid>
 </Window>
