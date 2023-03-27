@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,-2,684,249"/>
+        <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,31,684,247"/>
         <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142"/>
 
-        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="7,14,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLLogin" Height="41"/>
-        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="7,66,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
+        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="7,45,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLLogin" Height="41"/>
+        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="7,97,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
         <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="121,66,-5,0" Source="/Login.xaml" Height="368" Width="684"/>
         <TextBlock x:Name="TextBlockHeader" HorizontalAlignment="Left" Margin="223,1,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="501" FontSize="18"/>
+        <TextBlock x:Name="versionInfo" HorizontalAlignment="Left" Margin="2,376,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="114" Height="30" FontSize="10"/>
 
     </Grid>
 </Window>

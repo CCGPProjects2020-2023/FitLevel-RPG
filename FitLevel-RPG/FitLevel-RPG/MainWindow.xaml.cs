@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Reflection;
+using System.Diagnostics;
 
 namespace FitLevel_RPG
+
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,9 +27,13 @@ namespace FitLevel_RPG
         public MainWindow()
         {
             InitializeComponent();
+            
             TextBlockHeader.Text = "Welcome to FitLevel RPG!\n" +
                 "Please login or register.";
-           
+
+            // Loads verison information
+            versionInfo.Text = VersionInfo.getVersionInfo();
+
         }
 
         private void BtnClickLRegister(object sender, RoutedEventArgs e)
@@ -36,12 +44,9 @@ namespace FitLevel_RPG
 
         private void BtnClickLLogin(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Login();
+           
+            //Main.Content = new Login();
         }
-
-        private void Load()
-        {
-            
-        }
+        
     }
 }

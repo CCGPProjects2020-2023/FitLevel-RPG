@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Dashboard" Height="450" Width="800">
     <Grid>
-        
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="121,66,-5,0" Source="" Height="368" Width="684"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,31,0,0" TextWrapping="Wrap" Text="DASHBOARD" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonLogout" Content="Logout" HorizontalAlignment="Left" Margin="50,51,0,0" VerticalAlignment="Top" Click="LogoutButtonClick" Height="30" Width="66"/>
+        <TextBlock x:Name="versionInfo" HorizontalAlignment="Left" Margin="2,376,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="114" Height="30" FontSize="10"/>
+
     </Grid>
 </Window>

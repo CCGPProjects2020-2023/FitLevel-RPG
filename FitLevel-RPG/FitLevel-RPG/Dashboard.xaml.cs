@@ -22,6 +22,15 @@ namespace FitLevel_RPG
         public Dashboard()
         {
             InitializeComponent();
+            versionInfo.Text = VersionInfo.getVersionInfo();
+        }
+
+        private void LogoutButtonClick(object sender, RoutedEventArgs e)
+        {
+            var parentWindow = Window.GetWindow(this);
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            parentWindow.Close();
         }
     }
 }

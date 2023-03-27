@@ -9,14 +9,14 @@
       Title="Login">
 
     <Grid Margin="-2,0,2,0">
-        <TextBox x:Name="TextboxUsername" HorizontalAlignment="Left" Margin="274,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TextboxPassword" HorizontalAlignment="Left" Margin="274,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextboxUsername" HorizontalAlignment="Left" Margin="274,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TabIndex="0"/>
         <Label x:Name="LabelUsername" Content="Username:" HorizontalAlignment="Left" Margin="208,104,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LabelPassword" Content="Password:" HorizontalAlignment="Left" Margin="211,149,0,0" VerticalAlignment="Top"/>
 
         <TextBlock x:Name="textBlockForgotPassword" HorizontalAlignment="Left" Margin="180,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"><Hyperlink Click="ForgotPasswordClick"><Run Text="Forgot Password?"/></Hyperlink></TextBlock>
-        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="303,193,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLLogin"/>
+        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="303,193,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLLogin" IsDefault="True"/>
         <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="303,226,0,0" VerticalAlignment="Top" Width="91" Click="BtnClickLRegister"/>
         <TextBlock Text="Login" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="216,33,0,0"/>
+        <PasswordBox x:Name="TextboxPassword" HorizontalAlignment="Left" Margin="274,153,0,0" VerticalAlignment="Top" Width="120" PasswordChar="*" TabIndex="1"/>
     </Grid>
 </Page>
