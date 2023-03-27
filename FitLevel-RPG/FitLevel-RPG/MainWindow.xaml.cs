@@ -44,8 +44,8 @@ namespace FitLevel_RPG
 
         private void BtnClickLLogin(object sender, RoutedEventArgs e)
         {
-           
-            //Main.Content = new Login();
+
+            Main.Content = new Login();
         }
         
     }
