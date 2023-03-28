@@ -1,28 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {}
+    "C:\\R\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {
+    "C:\\R\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {
       "version": "1.0.0-DEVBUILD",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+        "projectUniqueName": "C:\\R\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
         "projectName": "FitLevel-RPG",
-        "projectPath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
-        "packagesPath": "C:\\Users\\evanm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evanm\\source\\repos\\FitLevel-RPG3\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
+        "projectPath": "C:\\R\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+        "packagesPath": "C:\\Users\\mngoo\\.nuget\\packages\\",
+        "outputPath": "C:\\R\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\evanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mngoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -55,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
