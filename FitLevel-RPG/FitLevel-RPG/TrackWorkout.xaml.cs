@@ -18,18 +18,13 @@ namespace FitLevel_RPG
     /// <summary>
     /// Interaction logic for TrackWorkout.xaml
     /// </summary>
+    /// 
     public partial class TrackWorkout : Page
     {
+        List<string> list = new List<string>();
         public TrackWorkout()
         {
             InitializeComponent();
-        }
-        private void LogoutButtonClick(object sender, RoutedEventArgs e)
-        {
-            var parentWindow = Window.GetWindow(this);
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            parentWindow.Close();
         }
     }
 }

@@ -9,12 +9,7 @@
       Title="Track Workout">
 
     <Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
-		<StackPanel Grid.Column="0" Margin="10" Width ="5">
+        <StackPanel Grid.Column="0" Margin="10" Width ="5">
 			
 		</StackPanel>
 	</Grid>
