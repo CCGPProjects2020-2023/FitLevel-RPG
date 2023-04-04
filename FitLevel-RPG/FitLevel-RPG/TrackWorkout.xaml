@@ -13,12 +13,7 @@
 			<ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Dashboard" Content="Dashboard" HorizontalAlignment="Left" Margin="7,45,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLLogin" Height="41"/>
-        <Button x:Name="TrackWorkout" Content="Track Workout" HorizontalAlignment="Left" Margin="7,97,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
-        <Button x:Name="WorkoutOverview" Content="Workout Overview" HorizontalAlignment="Left" Margin="7,149,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
-        <Button x:Name="PreMadeWorkout" Content="Pre-Made Workout" HorizontalAlignment="Left" Margin="7,201,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
-        <Button x:Name="LogOut" Content="Logout" HorizontalAlignment="Left" Margin="7,253,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
-
+        
 		<StackPanel Grid.Column="0" Margin="10" Width ="5">
 			
 		</StackPanel>
