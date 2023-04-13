@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace FitLevel_RPG
 {
     /// <summary>
-    /// Interaction logic for Dashboard.xaml
+    /// Interaction logic for UserDashboard.xaml
     /// </summary>
-    public partial class Dashboard : Window
+    public partial class UserDashboard : Window
     {
-        public Dashboard()
+        public UserDashboard()
         {
             InitializeComponent();
             versionInfo.Text = VersionInfo.getVersionInfo();

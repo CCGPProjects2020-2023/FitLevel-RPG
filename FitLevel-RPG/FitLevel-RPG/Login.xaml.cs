@@ -50,7 +50,7 @@ namespace FitLevel_RPG
                     if(count == 1)
                     {
                         MessageBox.Show("Login Success!");
-                        Dashboard dashboard = new Dashboard();
+                        UserDashboard dashboard = new UserDashboard();
                         var parentWindow = Window.GetWindow(this);
                         dashboard.Show();
                         parentWindow.Close();

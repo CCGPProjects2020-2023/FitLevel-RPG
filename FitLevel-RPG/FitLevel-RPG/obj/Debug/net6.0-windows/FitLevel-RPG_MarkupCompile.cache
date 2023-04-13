@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\App.xaml
-896763691
+8-2028310717
 
-10-1742984269
+10-182494385
 195-274438768
-Dashboard.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;Register.xaml;TrackWorkout.xaml;
+Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;
 
-True
+False
 
