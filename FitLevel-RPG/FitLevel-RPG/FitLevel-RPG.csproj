@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <FileVersion></FileVersion>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <Version>$(AssemblyVersion)-DEVBUILD</Version>
     <UserSecretsId>6b4a4542-ac8e-47d3-a723-81b81b60423e</UserSecretsId>
   </PropertyGroup>

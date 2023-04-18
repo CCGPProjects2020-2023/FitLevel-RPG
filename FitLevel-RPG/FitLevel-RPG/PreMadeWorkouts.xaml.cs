@@ -20,14 +20,18 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class PreMadeWorkouts : Page
     {
-        Hyperlink hl = new Hyperlink();
-       List<ItemList> BeginnerList = new List<ItemList>()
+        
+        List<ItemList> BeginnerList = new List<ItemList>()
             {
                 new ItemList(){ Workout="Beginner Cardio", Description="Easy cardio to help get you started."}
             };
         List<ItemList> IntermediateList = new List<ItemList>()
             {
                 new ItemList(){ Workout="(Not Active Yet)Intermediate Starter Warmup", Description="Simple intermediate warmup."}
+            };
+        List<ItemList> AdvancedList = new List<ItemList>()
+            {
+                new ItemList(){ Workout="(Not Active Yet)Advanced Starter Warmup", Description="In depth advanced warmup."}
             };
         public PreMadeWorkouts()
         {
@@ -79,6 +83,10 @@ namespace FitLevel_RPG
             else if(difficultyComboBox.SelectedIndex == 1)
             {
                 this.listView.ItemsSource = IntermediateList;
+            }
+            else if(difficultyComboBox.SelectedIndex == 2)
+            {
+                this.listView.ItemsSource = AdvancedList;
             }
         }
 

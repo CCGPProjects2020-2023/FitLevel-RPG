@@ -229,7 +229,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FitLevel-RPG;V1.0.0.0;component/pre-made%20workouts/beginnercardio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FitLevel-RPG;V1.0.0.2;component/pre-made%20workouts/beginnercardio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pre-Made Workouts\BeginnerCardio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

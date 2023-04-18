@@ -29,7 +29,29 @@ namespace FitLevel_RPG
             versionInfo.Text = VersionInfo.getVersionInfo();
         }
 
-        private void LogoutButtonClick(object sender, RoutedEventArgs e)
+
+        private void DashboardButton_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UserDashboard();
+        }
+        
+
+        private void TrackWorkoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new TrackWorkout();
+        }
+
+        private void WorkoutOverviewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new WorkoutsOverview();
+        }
+
+        private void PremadeWorkoutsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new PreMadeWorkouts();
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             var parentWindow = Window.GetWindow(this);
             LoggedInUser = "";
@@ -37,16 +59,6 @@ namespace FitLevel_RPG
             MainWindow mw = new MainWindow();
             mw.Show();
             parentWindow.Close();
-        }
-
-        private void ViewPreMadeWorkouts(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new PreMadeWorkouts();
-        }
-
-        private void DashboardButton_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new UserDashboard();
         }
     }
 }

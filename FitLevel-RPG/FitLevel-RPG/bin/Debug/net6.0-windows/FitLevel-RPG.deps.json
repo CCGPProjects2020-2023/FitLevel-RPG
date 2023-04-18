@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "FitLevel-RPG/1.0.0.0-DEVBUILD": {
+      "FitLevel-RPG/1.0.0.2-DEVBUILD": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.UserSecrets": "6.0.0",
           "System.Data.SqlClient": "4.8.5"
@@ -215,7 +215,7 @@
     }
   },
   "libraries": {
-    "FitLevel-RPG/1.0.0.0-DEVBUILD": {
+    "FitLevel-RPG/1.0.0.2-DEVBUILD": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

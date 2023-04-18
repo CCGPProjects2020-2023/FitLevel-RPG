@@ -316,3 +316,5 @@ C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-win
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.baml
