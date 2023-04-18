@@ -10,8 +10,21 @@
 
     <Grid >
 
-        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="187,239,0,0" VerticalAlignment="Top" Width="126" Click="RegisterButtonClick"/>
-        <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="187,279,0,0" VerticalAlignment="Top" Width="126" Click="CancelButtonClick"/>
+        <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="187,285,0,0" VerticalAlignment="Top" Width="126" Click="RegisterButtonClick"/>
+        <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="187,318,0,0" VerticalAlignment="Top" Width="126" Click="CancelButtonClick"/>
         <TextBlock Text="Register" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="207,45,0,0"/>
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="250,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="usernameLabel" Content="Username:" HorizontalAlignment="Left" Margin="184,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fullnameTextBox" HorizontalAlignment="Left" Margin="250,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="fullnameLabel" Content="Full Name:" HorizontalAlignment="Left" Margin="183,123,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailTextbox" HorizontalAlignment="Left" Margin="250,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="emailLabel" Content="Email Address:" HorizontalAlignment="Left" Margin="162,155,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="dobLabel" Content="Date of Birth:" HorizontalAlignment="Left" Margin="169,182,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordTextbox" HorizontalAlignment="Left" Margin="250,217,0,0"  VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="passwordLabel" Content="Password:" HorizontalAlignment="Left" Margin="187,213,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="confirmPasswordTextbox" HorizontalAlignment="Left" Margin="250,245,0,0"  VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="confirmPasswordLabel" Content="Confirm Password:" HorizontalAlignment="Left" Margin="142,241,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dobTextbox" HorizontalAlignment="Left" Margin="250,183,0,0" VerticalAlignment="Top" Width="158"/>
     </Grid>
 </Page>

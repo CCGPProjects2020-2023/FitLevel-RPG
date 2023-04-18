@@ -47,6 +47,10 @@ namespace FitLevel_RPG
 
             Main.Content = new Login();
         }
-        
+
+        private void BtnClickExit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

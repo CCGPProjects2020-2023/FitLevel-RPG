@@ -19,18 +19,27 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class UserDashboard : Window
     {
+        public static string LoggedInUser { get; set; }
+        
         public UserDashboard()
         {
             InitializeComponent();
+            welcomeTextBlock.Text = "Welcome, " + LoggedInUser + "!";
             versionInfo.Text = VersionInfo.getVersionInfo();
         }
 
         private void LogoutButtonClick(object sender, RoutedEventArgs e)
         {
             var parentWindow = Window.GetWindow(this);
+            LoggedInUser = null;
             MainWindow mw = new MainWindow();
             mw.Show();
             parentWindow.Close();
+        }
+
+        private void ViewPreMadeWorkouts(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new PreMadeWorkouts();
         }
     }
 }

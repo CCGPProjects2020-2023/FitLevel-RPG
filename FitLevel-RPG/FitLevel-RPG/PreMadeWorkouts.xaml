@@ -1,0 +1,19 @@
+﻿<Page x:Class="FitLevel_RPG.PreMadeWorkouts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FitLevel_RPG"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PreMadeWorkouts">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="309,67,0,0" TextWrapping="Wrap" Text="Pre-Made Workouts" VerticalAlignment="Top"/>
+        <ComboBox x:Name="difficultyComboBox" HorizontalAlignment="Left" Margin="139,106,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="difficultyComboBox_SelectionChanged"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{Binding list}" Margin="30,191,30,34" SelectionChanged="dataGrid_SelectionChanged">
+            
+        </DataGrid>
+
+    </Grid>
+</Page>
