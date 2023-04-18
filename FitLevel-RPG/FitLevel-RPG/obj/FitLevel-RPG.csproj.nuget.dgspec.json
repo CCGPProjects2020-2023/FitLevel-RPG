@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {}
+    "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {
+    "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj": {
       "version": "1.0.0-DEVBUILD",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+        "projectUniqueName": "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
         "projectName": "FitLevel-RPG",
-        "projectPath": "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+        "projectPath": "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
         "packagesPath": "C:\\Users\\evanm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
+        "outputPath": "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

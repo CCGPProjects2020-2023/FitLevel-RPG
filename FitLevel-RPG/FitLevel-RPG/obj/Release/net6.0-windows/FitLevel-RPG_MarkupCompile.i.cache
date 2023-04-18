@@ -1,0 +1,20 @@
+﻿FitLevel-RPG
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Release\net6.0-windows\
+FitLevel_RPG
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\App.xaml
+9-1472047479
+
+141334016874
+204807505919
+Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;
+
+False
+

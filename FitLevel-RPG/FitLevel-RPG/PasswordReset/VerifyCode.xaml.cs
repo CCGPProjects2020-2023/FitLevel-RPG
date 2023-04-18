@@ -30,7 +30,7 @@ namespace FitLevel_RPG
         private void VerifyCodeButtonClick(object sender, RoutedEventArgs e)
         {
             // DB CONNECTION
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FitLevelDB;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
