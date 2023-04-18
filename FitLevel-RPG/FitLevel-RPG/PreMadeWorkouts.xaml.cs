@@ -23,11 +23,11 @@ namespace FitLevel_RPG
         Hyperlink hl = new Hyperlink();
        List<ItemList> BeginnerList = new List<ItemList>()
             {
-                new ItemList(){ Workout="Introduction to Workouts", Description="Easy & simple workouts to help you get started."}
+                new ItemList(){ Workout="Beginner Cardio", Description="Easy cardio to help get you started."}
             };
         List<ItemList> IntermediateList = new List<ItemList>()
             {
-                new ItemList(){ Workout="Intermediate Starter Warmup", Description="Simple intermediate warmup."}
+                new ItemList(){ Workout="(Not Active Yet)Intermediate Starter Warmup", Description="Simple intermediate warmup."}
             };
         public PreMadeWorkouts()
         {
@@ -36,9 +36,9 @@ namespace FitLevel_RPG
             difficultyComboBox.Items.Add("Beginner");
             difficultyComboBox.Items.Add("Intermediate");
             difficultyComboBox.Items.Add("Advanced");
+            difficultyComboBox.SelectedIndex = 0;
 
-            this.dataGrid.ItemsSource = BeginnerList;
-
+            this.listView.ItemsSource = BeginnerList;
 
         }
 
@@ -46,6 +46,11 @@ namespace FitLevel_RPG
         {
             public string Workout { get; set; }
             public string Description { get; set; }
+
+            public override string ToString()
+            {
+                return Workout + " - " + Description;
+            }
         }
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -53,16 +58,30 @@ namespace FitLevel_RPG
 
         }
 
+        private void OpenPreMadeWorkout(object sender, RoutedEventArgs e)
+        {
+            if(difficultyComboBox.Text == "Beginner")
+            {
+                if (listView.SelectedIndex == 0)
+                {
+                    NavigationService.Navigate(new Uri("./Pre-Made Workouts/BeginnerCardio.xaml", UriKind.Relative));
+                }
+            }
+            
+        }
+
         private void difficultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (difficultyComboBox.SelectedIndex == 0)
             {
-                this.dataGrid.ItemsSource = BeginnerList;
+                this.listView.ItemsSource = BeginnerList;
             }
             else if(difficultyComboBox.SelectedIndex == 1)
             {
-                this.dataGrid.ItemsSource = IntermediateList;
+                this.listView.ItemsSource = IntermediateList;
             }
         }
+
+        
     }
 }

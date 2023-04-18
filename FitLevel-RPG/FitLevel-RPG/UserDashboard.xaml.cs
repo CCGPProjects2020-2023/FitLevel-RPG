@@ -31,6 +31,7 @@ namespace FitLevel_RPG
         private void LogoutButtonClick(object sender, RoutedEventArgs e)
         {
             var parentWindow = Window.GetWindow(this);
+            LoggedInUser = "";
             LoggedInUser = null;
             MainWindow mw = new MainWindow();
             mw.Show();
