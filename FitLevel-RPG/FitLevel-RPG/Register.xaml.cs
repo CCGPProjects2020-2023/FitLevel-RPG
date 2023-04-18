@@ -98,7 +98,7 @@ namespace FitLevel_RPG
                     {
                         formInfoError.Visibility = Visibility.Hidden;
                         errorTextblock.Visibility = Visibility.Hidden;
-                        String createAccount = "INSERT INTO Accounts (username, email, name, dateofbirth, password) VALUES (@username, @email, @fullname, @dob, @password)";
+                        String createAccount = "INSERT INTO Accounts (username, email, name, dateofbirth, password, xp) VALUES (@username, @email, @fullname, @dob, @password, @xp)";
                         SqlCommand cmd2 = new SqlCommand(createAccount, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
                         cmd2.Parameters.AddWithValue("@email", emailTextbox.Text);
@@ -106,6 +106,7 @@ namespace FitLevel_RPG
                         cmd2.Parameters.AddWithValue("@fullname", fullnameTextBox.Text);
                         cmd2.Parameters.AddWithValue("@dob", dobTextbox.Text);
                         cmd2.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
+                        cmd2.Parameters.AddWithValue("@xp", 0);
                         cmd2.ExecuteScalar();
                         MessageBox.Show("Account created!");
                         NavigationService.Navigate(new Uri("Login.xaml", UriKind.Relative));

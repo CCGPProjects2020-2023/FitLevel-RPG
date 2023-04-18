@@ -38,32 +38,49 @@ namespace FitLevel_RPG
                     // Login check
                     sqlCon.Open();
                     String query = "SELECT COUNT(1) FROM Accounts WHERE email=@email AND verifycode=@code";
-                    
+                    String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@email", TextboxEmail.Text);
                     cmd.Parameters.AddWithValue("@code", TextboxvCode.Text);
-                    
+
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
                     if (count == 1 && TextboxvCode.Text != null && TextboxvCode.Text != "" && TextboxEmail.Text != "")
                     {
                         MessageBox.Show("Code and Email validated!");
                         ChangePassword.Email = TextboxEmail.Text;
-                        NavigationService.Navigate(new Uri("./PasswordReset/ChangePassword.xaml", UriKind.Relative));
+                        NavigationService.Navigate(new Uri("./PasswordReset/ChangePassword.xaml", UriKind.Relative));                        
                     }
                     else
                     {
-                        MessageBox.Show("Invalid Code and/or Email.");
+                        SqlCommand cmd2 = new SqlCommand(resetCode, sqlCon);
+                        cmd2.Parameters.AddWithValue("@email", TextboxEmail.Text);
+                        cmd2.ExecuteScalar();
+                        MessageBox.Show("Invalid Code and/or Email.\nFor security, code has been reset if the account exists.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                        NavigationService.Navigate(new Uri("./Login.xaml", UriKind.Relative));
                     }
                 }
             } catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+                SqlCommand cmd2 = new SqlCommand(resetCode, sqlCon);
+                cmd2.Parameters.AddWithValue("@email", TextboxEmail.Text);
+                cmd2.ExecuteScalar();
+                MessageBox.Show("Invalid Code and/or Email.\nFor security, code has been reset if the account exists.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                NavigationService.Navigate(new Uri("./Login.xaml", UriKind.Relative));
             }
             finally
             {
+                String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+                SqlCommand cmd2 = new SqlCommand(resetCode, sqlCon);
+                cmd2.Parameters.AddWithValue("@email", TextboxEmail.Text);
+                cmd2.ExecuteScalar();
                 sqlCon.Close();
             }
+
+
         }
     }
+
 }

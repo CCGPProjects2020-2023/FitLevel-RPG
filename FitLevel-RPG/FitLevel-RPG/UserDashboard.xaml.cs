@@ -24,7 +24,7 @@ namespace FitLevel_RPG
         public UserDashboard()
         {
             InitializeComponent();
-            welcomeTextBlock.Text = "Welcome, " + LoggedInUser + "!";
+            welcomeTextBlock.Text = "Welcome, " + LoggedInUser.ToUpper() + "!";
             versionInfo.Text = VersionInfo.getVersionInfo();
         }
 

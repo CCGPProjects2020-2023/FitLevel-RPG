@@ -49,7 +49,7 @@ namespace FitLevel_RPG
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
                     if(count == 1)
                     {
-                        MessageBox.Show("Login Success!");
+                        MessageBox.Show("Logged in successfully!\nClick OK to continue.","Login Success",MessageBoxButton.OK,MessageBoxImage.Information);
                         UserDashboard.LoggedInUser = TextboxUsername.Text;
                         UserDashboard dashboard = new UserDashboard();
                         var parentWindow = Window.GetWindow(this);
@@ -59,7 +59,7 @@ namespace FitLevel_RPG
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username and/or password.");
+                        MessageBox.Show("Invalid username and/or password.","Login Error",MessageBoxButton.OK,MessageBoxImage.Warning);
                     }
                 }
             } catch (Exception ex)
