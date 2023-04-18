@@ -50,8 +50,8 @@ namespace FitLevel_RPG
                     if(count == 1)
                     {
                         MessageBox.Show("Logged in successfully!\nClick OK to continue.","Login Success",MessageBoxButton.OK,MessageBoxImage.Information);
-                        UserDashboard.LoggedInUser = TextboxUsername.Text;
-                        UserDashboard dashboard = new UserDashboard();
+                        LoggedInView.LoggedInUser = TextboxUsername.Text;
+                        LoggedInView dashboard = new LoggedInView();
                         var parentWindow = Window.GetWindow(this);
                         dashboard.Show();
                         parentWindow.Close();

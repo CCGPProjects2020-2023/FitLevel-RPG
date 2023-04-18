@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xgt/d73rN6klqBE13HK7CZZK/0KdtHseT2GCUpZBPFcimUD7xiHk4geCnv1vBFNT0lCFlrnbHqZEA3GDfetiwg==",
+  "dgSpecHash": "U0m1UXxSSxBmhSIvPzEgQ0Fq8JrMpfdxCJmjxUQAlR4YoKYrcurlFP/+ZW5O/xYA4M5tZ3OlRzLFFmpu0gMKbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\evanm\\Desktop\\Centennial\\Software Dev Repos\\FitLevel Latest\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+  "projectFilePath": "C:\\Users\\evanm\\Desktop\\New folder\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evanm\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\evanm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

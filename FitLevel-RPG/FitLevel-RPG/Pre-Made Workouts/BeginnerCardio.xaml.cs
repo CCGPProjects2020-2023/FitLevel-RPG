@@ -77,7 +77,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
                     String query = "SELECT COUNT(1) FROM Accounts WHERE username=@username";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Parameters.AddWithValue("@username", UserDashboard.LoggedInUser);
+                    cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
                     if (count == 1)
                     {
@@ -86,7 +86,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
                         SqlCommand cmd2 = new SqlCommand(xpUpdate, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
                         cmd2.Parameters.AddWithValue("@xpAmount", sessionXP);
-                        cmd2.Parameters.AddWithValue("@username", UserDashboard.LoggedInUser);
+                        cmd2.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
                         cmd2.ExecuteScalar();
                         xpRewardText.Text = "For completing the workout, you have been awarded " + sessionXP + " experience!";
                         xpRewardText.Visibility = Visibility.Visible;

@@ -13,7 +13,7 @@
     <Compile Update="PreMadeWorkouts.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserDashboard.xaml.cs">
+    <Compile Update="LoggedInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
@@ -28,6 +28,9 @@
     <Compile Update="PasswordReset\VerifyCode.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="PasswordReset\ChangePassword.xaml">
@@ -39,7 +42,7 @@
     <Page Update="PreMadeWorkouts.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserDashboard.xaml">
+    <Page Update="LoggedInView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PasswordReset\VerifyCode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

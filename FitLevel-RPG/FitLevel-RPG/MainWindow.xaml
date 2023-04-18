@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitLevel_RPG"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+        Title="FitLevel RPG" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,31,684,217"/>
         <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142"/>

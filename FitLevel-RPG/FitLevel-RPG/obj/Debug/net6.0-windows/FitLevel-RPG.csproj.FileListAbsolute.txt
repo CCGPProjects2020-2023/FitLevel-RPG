@@ -224,7 +224,6 @@ C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-win
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.g.cs
-C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.cache
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.lref
@@ -236,7 +235,6 @@ C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-win
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.baml
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.baml
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.baml
-C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.g.resources
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.AssemblyInfoInputs.cache
@@ -312,3 +310,9 @@ C:\Users\evanm\Desktop\Centennial\Software Dev Repos\FitLevel Latest\FitLevel-RP
 C:\Users\evanm\Desktop\Centennial\Software Dev Repos\FitLevel Latest\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
 C:\Users\evanm\Desktop\Centennial\Software Dev Repos\FitLevel Latest\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
 C:\Users\evanm\Desktop\Centennial\Software Dev Repos\FitLevel Latest\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.baml
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.baml
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
+C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml

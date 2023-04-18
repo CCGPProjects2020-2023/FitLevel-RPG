@@ -9,8 +9,8 @@
       Title="PreMadeWorkouts">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="309,67,0,0" TextWrapping="Wrap" Text="Pre-Made Workouts" VerticalAlignment="Top"/>
-        <ComboBox x:Name="difficultyComboBox" HorizontalAlignment="Left" Margin="139,106,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="difficultyComboBox_SelectionChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,39,0,0" TextWrapping="Wrap" Text="Pre-Made Workouts" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="difficultyComboBox" HorizontalAlignment="Left" Margin="139,124,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="difficultyComboBox_SelectionChanged"/>
         <ListView x:Name="listView"  Margin="139,188,182,57">
             <ListView.View>
                 <GridView>
@@ -19,6 +19,7 @@
             </ListView.View>
         </ListView>
         <Button x:Name="button" Content="Open Selected Pre-Made" HorizontalAlignment="Left" Margin="336,316,0,0" VerticalAlignment="Top" Width="166" Click="OpenPreMadeWorkout"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="139,103,0,0" TextWrapping="Wrap" Text="Workout Difficulty:" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
