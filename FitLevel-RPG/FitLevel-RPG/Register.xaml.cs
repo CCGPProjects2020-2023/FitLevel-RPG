@@ -30,7 +30,46 @@ namespace FitLevel_RPG
 
         private void RegisterButtonClick(object sender, RoutedEventArgs e)
         {
-            bool passwordCheckFail = false;
+            bool passwordCheckFail = true;
+            bool blankFields = true;
+            
+            // Checks for matching password
+            if (passwordTextbox.Password.Length < 5 && passwordTextbox.Password.ToString() != "")
+            {
+                passwordInfoText.Text = "(Must be 5+ characters long)";
+                errorTextblock.Visibility = Visibility.Hidden;
+                passwordCheckFail = true;
+                passwordInfoText.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFEF5555"));
+
+                //MessageBox.Show("Password must be at least 5 characters long.");
+            }
+            else if(confirmPasswordTextbox.Password.ToString() == passwordTextbox.Password.ToString() && passwordTextbox.Password.Length >= 5)
+            {
+                passwordInfoText.Text = "Password Looks Good!";
+                passwordCheckFail = false;
+                passwordInfoText.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF3CDA26"));
+            }
+            else
+            {
+                passwordInfoText.Text = "(Must be 5+ characters long)";
+                passwordInfoText.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFEF5555"));
+                passwordCheckFail = false;
+            }
+
+            if(emailTextbox.Text != "" && usernameTextBox.Text != "" && fullnameTextBox.Text != "" && dobTextbox.Text != "" && passwordTextbox.Password.ToString() != "" && confirmPasswordTextbox.Password.ToString() != "")
+            {
+                blankFields = false;
+            }
+            else
+            {
+                errorTextblock.Visibility = Visibility.Hidden;
+
+                formInfoError.Text = "Missing fields. Please fill out all text fields to register.";
+                formInfoError.Visibility = Visibility.Visible;
+                
+                //MessageBox.Show("Missing fields. Please fill out all text fields to register.","Missing Fields",MessageBoxButton.OK,MessageBoxImage.Warning);
+            }
+
             SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FitLevelDB;Integrated Security=True");
             try
             {
@@ -49,18 +88,16 @@ namespace FitLevel_RPG
                     cmd.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
 
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
-                    if(passwordTextbox.Password.Length < 5)
+
+
+                    if (count == 1)
                     {
-                        passwordCheckFail = true;
-                        MessageBox.Show("Password must be at least 5 characters long.");
+                        MessageBox.Show("Username or Email already exists");
                     }
-                    else
+                    if (count == 0 && confirmPasswordTextbox.Password.ToString() == passwordTextbox.Password.ToString() && passwordCheckFail == false && blankFields == false)
                     {
-                        passwordCheckFail = false;
-                    }
-                    if (count == 0 && confirmPasswordTextbox.Password.ToString() == passwordTextbox.Password.ToString() && passwordCheckFail == false)
-                    {
-                        
+                        formInfoError.Visibility = Visibility.Hidden;
+                        errorTextblock.Visibility = Visibility.Hidden;
                         String createAccount = "INSERT INTO Accounts (username, email, name, dateofbirth, password) VALUES (@username, @email, @fullname, @dob, @password)";
                         SqlCommand cmd2 = new SqlCommand(createAccount, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
@@ -74,14 +111,17 @@ namespace FitLevel_RPG
                         NavigationService.Navigate(new Uri("Login.xaml", UriKind.Relative));
 
                     }
-                    else if(count == 0 && confirmPasswordTextbox.Password.ToString() != passwordTextbox.Password.ToString() && passwordCheckFail==false)
+                    else if (passwordTextbox.Password.ToString() == "")
                     {
-                        MessageBox.Show("Passwords do not match.");
+                        errorTextblock.Text = "Password cannot be blank or null.";
+                        errorTextblock.Visibility = Visibility.Visible;
                     }
-                    else
+                    else if(count == 0 && confirmPasswordTextbox.Password.ToString() != passwordTextbox.Password.ToString() && passwordCheckFail==true)
                     {
-                        MessageBox.Show("Username or Email already exists");
+                        errorTextblock.Text = "Passwords do not match.";
+                        errorTextblock.Visibility = Visibility.Visible;
                     }
+                    
                 }
             } catch (Exception ex)
             {
