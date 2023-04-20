@@ -11,12 +11,13 @@
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="300,36,0,0" TextWrapping="Wrap" Text="Plan Next Workout" VerticalAlignment="Top" FontSize="18"/>
 
-        <Button x:Name="addExercise" Content="Add Exercise" HorizontalAlignment="Left" Margin="178,280,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="509,300,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="addExercise" Content="Add Exercise" HorizontalAlignment="Left" Margin="178,280,0,0" VerticalAlignment="Top" Click="addExercise_Click"/>
+        <Button x:Name="saveButton" Content="Update Workouts" HorizontalAlignment="Left" Margin="509,290,0,0" VerticalAlignment="Top" Width="112" Click="saveButton_Click"/>
         <Button x:Name="planNextWorkout" Content="Plan Next Workout" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top"/>
         <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Click="BtnClickWorkoutHistory"/>
         <Button x:Name="setButton" Content="Sets" HorizontalAlignment="Left" Margin="178,255,0,0" VerticalAlignment="Top" Width="71"/>
         <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="178,100,92,126" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="deletePlanButton" Content="Delete Selected Plan" HorizontalAlignment="Left" Margin="509,260,0,0" VerticalAlignment="Top" Click="deletePlanButton_Click"/>
 
 
     </Grid>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\App.xaml
-14-1965530582
+15151030606
 
-171897664732
+181280131983
 2241539620929
-LoggedInView.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;PlanNextWorkout.xaml;Pre-Made Workouts\BeginnerCardio.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;WorkoutHistory.xaml;WorkoutsOverview.xaml;
+AddWorkout.xaml;LoggedInView.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;PlanNextWorkout.xaml;Pre-Made Workouts\BeginnerCardio.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;WorkoutHistory.xaml;WorkoutsOverview.xaml;
 
 False
 

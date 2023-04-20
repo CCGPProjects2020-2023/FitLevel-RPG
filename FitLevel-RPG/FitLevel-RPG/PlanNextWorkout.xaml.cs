@@ -22,6 +22,7 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class PlanNextWorkout : Page
     {
+        DataTable dt = new DataTable("WorkoutPlan");
         public PlanNextWorkout()
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace FitLevel_RPG
 
             {
 
-                CmdString = "SELECT wset, sreps, sweight FROM WorkoutPlan WHERE username=@username";
+                CmdString = "SELECT id, wset, sreps, sweight FROM WorkoutPlan WHERE username=@username";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
                 cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
@@ -55,13 +56,42 @@ namespace FitLevel_RPG
 
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
 
-                DataTable dt = new DataTable("WorkoutPlan");
+                
 
                 sda.Fill(dt);
 
                 dataGrid.ItemsSource = dt.DefaultView;
 
             }
+        }
+
+        private void addExercise_Click(object sender, RoutedEventArgs e)
+        {
+            AddWorkout aw = new AddWorkout();
+            aw.Show();
+        }
+
+        private void deletePlanButton_Click(object sender, RoutedEventArgs e)
+        {
+            string CmdString = string.Empty;
+            var selectedItem = dataGrid.SelectedItem;
+            //var cellInfo = dataGrid.SelectedCells[0];
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+            DataRowView drv = dataGrid.SelectedItem as DataRowView;
+            if (drv != null)
+            {
+                DataView dataView = dataGrid.ItemsSource as DataView;
+                dataView.Table.Rows.Remove(drv.Row);
+                CmdString = "DELETE FROM WorkoutPlan WHERE id=@id";
+                SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
+                //cmd.Parameters.AddWithValue("@id", cellInfo.Column.GetCellContent(cellInfo.Item));
+            }
+        }
+
+        private void saveButton_Click(object sender, RoutedEventArgs e)
+        {
+            FillData();
         }
     }
 }
