@@ -318,3 +318,18 @@ C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-win
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.baml
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.baml
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.baml
