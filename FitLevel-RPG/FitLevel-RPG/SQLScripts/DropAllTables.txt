@@ -1,2 +1,8 @@
-﻿EXEC dropAllTables EXEC dropAllFunctions EXEC dropAllProcedures
+﻿DECLARE @cmds VARCHAR(MAX)
+
+SELECT @cmds = 'DROP FUNCTION ' + STRING_AGG(name, ',')
+FROM sys.objects
+WHERE type = 'FN'
+
+EXEC(@cmds)
 GO
