@@ -392,3 +392,22 @@ C:\R\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RP
 C:\R\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.CopyComplete
 C:\R\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
 C:\R\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.baml
