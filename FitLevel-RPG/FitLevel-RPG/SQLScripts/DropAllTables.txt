@@ -1,0 +1,2 @@
+﻿EXEC dropAllTables EXEC dropAllFunctions EXEC dropAllProcedures
+GO
