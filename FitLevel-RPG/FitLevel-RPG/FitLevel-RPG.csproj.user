@@ -7,6 +7,9 @@
     <Compile Update="PasswordReset\ChangePassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PlanNextWorkout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pre-Made Workouts\BeginnerCardio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="PasswordReset\ChangePassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PlanNextWorkout.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pre-Made Workouts\BeginnerCardio.xaml">

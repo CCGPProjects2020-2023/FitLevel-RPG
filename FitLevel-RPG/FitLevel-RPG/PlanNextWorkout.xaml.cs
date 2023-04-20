@@ -16,18 +16,19 @@ using System.Windows.Shapes;
 namespace FitLevel_RPG
 {
     /// <summary>
-    /// Interaction logic for WorkoutHistory.xaml
+    /// Interaction logic for PlanNextWorkout.xaml
     /// </summary>
-    public partial class WorkoutHistory : Page
+    public partial class PlanNextWorkout : Page
     {
-        public WorkoutHistory()
+        public PlanNextWorkout()
         {
             InitializeComponent();
         }
 
-        private void BtnClickPlanNextWorkout(object sender, RoutedEventArgs e)
+
+        private void BtnClickWorkoutHistory(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("PlanNextWorkout.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("WorkoutHistory.xaml", UriKind.Relative));
         }
     }
 }

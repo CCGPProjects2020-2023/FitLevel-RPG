@@ -1,0 +1,22 @@
+﻿<Page x:Class="FitLevel_RPG.PlanNextWorkout"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FitLevel_RPG"
+      mc:Ignorable="d" 
+      d:DesignHeight="368" d:DesignWidth="684"
+      Title="PlanNextWorkout">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="300,36,0,0" TextWrapping="Wrap" Text="Plan Next Workout" VerticalAlignment="Top" FontSize="18"/>
+
+        <Button x:Name="addExercise" Content="Add Exercise" HorizontalAlignment="Left" Margin="178,268,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="530,300,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="planNextWorkout" Content="Plan Next Workout" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Click="BtnClickWorkoutHistory"/>
+        <Button x:Name="setButton" Content="Sets" HorizontalAlignment="Left" Margin="178,243,0,0" VerticalAlignment="Top" Width="71"/>
+
+
+    </Grid>
+</Page>
