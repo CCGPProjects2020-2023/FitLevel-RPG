@@ -41,7 +41,7 @@ namespace FitLevel_RPG
                 {
                     // Login check
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM User WHERE username=@username AND password=@password";
+                    String query = "SELECT COUNT(1) FROM [User] WHERE username=@username AND password=@password";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@username", TextboxUsername.Text);
