@@ -18,8 +18,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="button" Content="Open Selected Pre-Made" HorizontalAlignment="Left" Margin="469,316,0,0" VerticalAlignment="Top" Width="166" Click="OpenPreMadeWorkout"/>
+        <Button x:Name="button" Content="Open Selected Pre-Made" Margin="469,0,49,32" VerticalAlignment="Bottom" Width="166" Click="OpenPreMadeWorkout" IsDefault="True"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="139,103,0,0" TextWrapping="Wrap" Text="Workout Difficulty:" VerticalAlignment="Top"/>
-
     </Grid>
+
 </Page>

@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitLevel_RPG"
         mc:Ignorable="d"
-        Title="FitLevel RPG" Height="480" Width="900">
+        Title="FitLevel RPG" Height="480" Width="900" ResizeMode="CanMinimize">
     <Grid>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="147,66,10,10" Source=""/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="FitLevel RPG" VerticalAlignment="Top" FontSize="16"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="521*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="147,66,10,10" Source="" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="407,10,0,0" TextWrapping="Wrap" Text="FitLevel RPG" VerticalAlignment="Top" FontSize="16"/>
         <Button x:Name="Dashboard" Content="Dashboard" HorizontalAlignment="Left" Margin="7,45,0,0" VerticalAlignment="Top" Width="109" Height="41" Click="DashboardButton_Click"/>
         <Button x:Name="TrackWorkout" Content="Track Workout" HorizontalAlignment="Left" Margin="7,97,0,0" VerticalAlignment="Top" Width="109" Height="41" Click="TrackWorkoutButton_Click"/>
         <Button x:Name="WorkoutOverview" Content="Workout Overview" HorizontalAlignment="Left" Margin="7,149,0,0" VerticalAlignment="Top" Width="109" Height="41" Click="WorkoutOverviewButton_Click"/>

@@ -7,13 +7,17 @@
         mc:Ignorable="d"
         Title="FitLevel RPG" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,31,684,217"/>
-        <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="Nav" NavigationUIVisibility="Hidden" Margin="0,31,22,217"/>
+        <StackPanel Orientation="Horizontal" Height ="39" Margin="0,253,0,142" Grid.ColumnSpan="2"/>
 
         <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="7,45,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLLogin" Height="41"/>
         <Button x:Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="7,97,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickLRegister" Height="41"/>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="121,66,-5,0" Source="/Login.xaml" Height="368" Width="684"/>
-        <TextBlock x:Name="TextBlockHeader" HorizontalAlignment="Left" Margin="223,1,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="501" FontSize="18"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="121,66,-5,0" Source="/Login.xaml" Height="368" Width="684" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="TextBlockHeader" HorizontalAlignment="Left" Margin="185,1,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="365" FontSize="18" Grid.Column="1"/>
         <TextBlock x:Name="versionInfo" HorizontalAlignment="Left" Margin="2,376,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="114" Height="30" FontSize="10"/>
         <Button x:Name="ButtonExit" Content="Exit Program" HorizontalAlignment="Left" Margin="7,176,0,0" VerticalAlignment="Top" Width="109" Click="BtnClickExit" Height="41"/>
 
