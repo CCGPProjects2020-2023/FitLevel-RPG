@@ -87,11 +87,9 @@ namespace FitLevel_RPG {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.7.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
-            if (_contentLoaded)
-            {
                 return;
             }
             _contentLoaded = true;
