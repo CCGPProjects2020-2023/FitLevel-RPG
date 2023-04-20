@@ -43,7 +43,7 @@ namespace FitLevel_RPG
 
         private void WorkoutOverviewButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new WorkoutsOverview();
+            Main.Content = new PlanNextWorkout();
         }
 
         private void PremadeWorkoutsButton_Click(object sender, RoutedEventArgs e)
