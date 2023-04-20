@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\
 FitLevel_RPG
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\App.xaml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\App.xaml
 121039026534
 
 15-452044743
-204807505919
+2041490356316
 LoggedInView.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;Pre-Made Workouts\BeginnerCardio.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;WorkoutsOverview.xaml;
 
-False
+True
 
