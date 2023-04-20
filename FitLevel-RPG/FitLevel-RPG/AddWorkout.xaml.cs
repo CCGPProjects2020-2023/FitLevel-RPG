@@ -43,12 +43,13 @@ namespace FitLevel_RPG
                     if (setTextbox.Text != "" && repsTextbox.Text != "" && weightTextbox.Text != "")
                     {
                         
-                        String xpUpdate = "INSERT INTO WorkoutPlan(wset, sreps, sweight, username) VALUES(@set, @reps, @weight, @username)";
-                        SqlCommand cmd2 = new SqlCommand(xpUpdate, sqlCon);
+                        String addPlan = "INSERT INTO WorkoutPlan(wset, sreps, sweight, username, createdate) VALUES(@set, @reps, @weight, @username, @date)";
+                        SqlCommand cmd2 = new SqlCommand(addPlan, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
                         cmd2.Parameters.AddWithValue("@set", setTextbox.Text);
                         cmd2.Parameters.AddWithValue("@reps", repsTextbox.Text);
                         cmd2.Parameters.AddWithValue("@weight", weightTextbox.Text);
+                        cmd2.Parameters.AddWithValue("@date", addDatePicker.SelectedDate);
                         cmd2.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
                         cmd2.ExecuteScalar();
                         MessageBox.Show("Plan Added! Click OK to close this window.");

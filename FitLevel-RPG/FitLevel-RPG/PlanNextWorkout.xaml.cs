@@ -48,16 +48,11 @@ namespace FitLevel_RPG
 
             {
 
-                CmdString = "SELECT id, wset, sreps, sweight FROM WorkoutPlan WHERE username=@username";
+                CmdString = "SELECT id AS [ID], wset AS [Set], sreps AS Reps, sweight AS Weight, CONVERT(VARCHAR(10), createdate ,111) AS Date FROM WorkoutPlan WHERE username=@username";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
                 cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
-                
-
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
-                
-
                 sda.Fill(dt);
 
                 dataGrid.ItemsSource = dt.DefaultView;
@@ -73,24 +68,57 @@ namespace FitLevel_RPG
 
         private void deletePlanButton_Click(object sender, RoutedEventArgs e)
         {
-            string CmdString = string.Empty;
-            var selectedItem = dataGrid.SelectedItem;
-            //var cellInfo = dataGrid.SelectedCells[0];
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+         
 
-            DataRowView drv = dataGrid.SelectedItem as DataRowView;
-            if (drv != null)
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            try
             {
-                DataView dataView = dataGrid.ItemsSource as DataView;
-                dataView.Table.Rows.Remove(drv.Row);
-                CmdString = "DELETE FROM WorkoutPlan WHERE id=@id";
-                SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
-                //cmd.Parameters.AddWithValue("@id", cellInfo.Column.GetCellContent(cellInfo.Item));
+                if (sqlCon.State == System.Data.ConnectionState.Closed)
+                {
+                    // Login check
+
+                    sqlCon.Open();
+                    String query = "SELECT COUNT(1) FROM WorkoutPlan WHERE id=@id";
+                    SqlCommand cmd = new SqlCommand(query, sqlCon);
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Parameters.AddWithValue("@id", deleteIdTextbox.Text);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (count == 1)
+                    {
+
+                        String deletePlan = "DELETE FROM WorkoutPlan WHERE id=@id AND username=@username";
+                        SqlCommand cmd2 = new SqlCommand(deletePlan, sqlCon);
+                        cmd2.CommandType = System.Data.CommandType.Text;
+                        cmd2.Parameters.AddWithValue("@id", deleteIdTextbox.Text);
+                        cmd2.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                        cmd2.ExecuteScalar();
+                        dt.Rows.Clear();
+                        FillData();
+                        MessageBox.Show("Plan with ID " + deleteIdTextbox.Text + " has been successfully deleted.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid ID. ID does not exist for your account.", "Error");
+                    }
+                }
+            } catch (InvalidCastException)
+            {
+                MessageBox.Show("Invalid cast.");
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\nMake sure you entered a number.", "Error Has Occurred", MessageBoxButton.OK,MessageBoxImage.Warning);
+            }
+            finally
+            {
+
+                sqlCon.Close();
             }
         }
 
         private void saveButton_Click(object sender, RoutedEventArgs e)
         {
+            dt.Rows.Clear();           
             FillData();
         }
     }

@@ -14,8 +14,10 @@
         <Label x:Name="weightLabel" Content="Weight:" HorizontalAlignment="Left" Margin="132,163,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="repsTextbox" HorizontalAlignment="Left" Margin="181,135,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="weightTextbox" HorizontalAlignment="Left" Margin="181,167,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="157,213,0,0" VerticalAlignment="Top" Click="cancelButton_Click"/>
-        <Button x:Name="addButton" Content="Add Workout" HorizontalAlignment="Left" Margin="226,213,0,0" VerticalAlignment="Top" Click="addButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="157,232,0,0" VerticalAlignment="Top" Click="cancelButton_Click"/>
+        <Button x:Name="addButton" Content="Add Workout" HorizontalAlignment="Left" Margin="226,232,0,0" VerticalAlignment="Top" Click="addButton_Click"/>
+        <Label x:Name="dateLabel" Content="Date:" HorizontalAlignment="Left" Margin="143,194,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="addDatePicker" HorizontalAlignment="Left" Margin="181,196,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "FitLevel-RPG/1.0.0.2-DEVBUILD": {
+      "FitLevel-RPG/1.0.0.2": {
         "dependencies": {
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.5",
@@ -634,7 +634,7 @@
     }
   },
   "libraries": {
-    "FitLevel-RPG/1.0.0.2-DEVBUILD": {
+    "FitLevel-RPG/1.0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
