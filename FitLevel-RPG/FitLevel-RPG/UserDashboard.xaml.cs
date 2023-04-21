@@ -36,7 +36,7 @@ namespace FitLevel_RPG
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
                     sqlCon.Open();
-                    
+                    sqlCon2.Open();
                     // Calculate total experience and retrieve level information
                     String query = @"
                         SELECT SUM(E.experience_points), L.level_number
@@ -58,17 +58,17 @@ namespace FitLevel_RPG
                         totalExperience = reader.GetInt32(0);
                         levelNumber = reader.GetInt32(1);
                     }
-
+                    
                     // Calculate total training volume per workout
                     String query2 = @"
                         SELECT W.date, SUM(S.repetitions * S.weight) AS volume
                         FROM Workout W
                         JOIN Exercise E ON W.workout_id = E.workout_id
-                        JOIN Sets S ON E.exercise_id = S.exercise_id
-                        GROUP BY W.date
-                        ORDER BY W.date";
+                        JOIN [Set] S ON E.exercise_id = S.exercise_id
+                        GROUP BY W.user_id
+                        ORDER BY W.user_id";
                    
-                    sqlCon2.Open();
+                    
                     SqlCommand cmd2 = new(query2, sqlCon2);
                     cmd.CommandType = System.Data.CommandType.Text;
 
