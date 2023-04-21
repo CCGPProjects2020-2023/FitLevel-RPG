@@ -25,8 +25,10 @@ namespace FitLevel_RPG
                 {
                     sqlCon.Open();
                     String getUser = "SELECT * FROM [User] WHERE user_id = @user_id";
-                    SqlCommand cmd = new SqlCommand(getUser, sqlCon);
-                    cmd.CommandType = System.Data.CommandType.Text;
+                    SqlCommand cmd = new SqlCommand(getUser, sqlCon)
+                    {
+                        CommandType = System.Data.CommandType.Text
+                    };
                     cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
 
                     using SqlDataReader reader = cmd.ExecuteReader();
@@ -36,7 +38,6 @@ namespace FitLevel_RPG
                         emailTextbox.Text = reader["email"].ToString();
                         fullnameTextBox.Text = reader["full_name"].ToString();
                         dobTextbox.Text = reader["dob"].ToString();
-                        passwordTextbox.Password = reader["password"].ToString();
                     }
                 }
             }
@@ -103,15 +104,17 @@ namespace FitLevel_RPG
                     {
                         formInfoError.Visibility = Visibility.Hidden;
                         errorTextblock.Visibility = Visibility.Hidden;
-                        String updateUser = "UPDATE [User] SET username = @username, email = @email, full_name = @full_name, dob = @dob, password = @password, level_id = @level_id";
-                        SqlCommand cmd2 = new SqlCommand(updateUser, sqlCon);
-                        cmd2.CommandType = System.Data.CommandType.Text;
+                        String updateUser = "UPDATE [User] SET username = @username, email = @email, full_name = @full_name, dob = @dob, password = @password WHERE user_id = @user_id";
+                        SqlCommand cmd2 = new(updateUser, sqlCon)
+                        {
+                            CommandType = System.Data.CommandType.Text
+                        };
                         cmd2.Parameters.AddWithValue("@email", emailTextbox.Text);
                         cmd2.Parameters.AddWithValue("@username", usernameTextBox.Text);
                         cmd2.Parameters.AddWithValue("@full_name", fullnameTextBox.Text);
                         cmd2.Parameters.AddWithValue("@dob", dobTextbox.Text);
                         cmd2.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
-                        cmd2.Parameters.AddWithValue("@level_id", levelId);
+                        cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
                         cmd2.ExecuteScalar();
                         MessageBox.Show("User Updated!");
                         
