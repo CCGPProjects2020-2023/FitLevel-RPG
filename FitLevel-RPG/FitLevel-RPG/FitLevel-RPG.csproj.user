@@ -4,7 +4,10 @@
     <_LastSelectedProfileId>C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="AddWorkout.xaml.cs">
+    <Compile Update="AddExercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSet.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PasswordReset\ChangePassword.xaml.cs">
@@ -48,7 +51,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AddWorkout.xaml">
+    <Page Update="AddExercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSet.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PasswordReset\ChangePassword.xaml">

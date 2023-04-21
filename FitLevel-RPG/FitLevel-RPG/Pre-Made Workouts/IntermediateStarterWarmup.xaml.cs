@@ -69,7 +69,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
-                    // NEEDS TO BE UPDATED WITH NEW SQL QUERIES
+                    
                     sqlCon.Open();
                     ButtonEnd.IsEnabled = false;
                     String xpUpdate = "INSERT INTO Experience (experience_points, user_id, timestamp)  VALUES (@xpAmount, @user_id, @timestamp)";

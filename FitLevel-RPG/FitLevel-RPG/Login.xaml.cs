@@ -56,7 +56,7 @@ namespace FitLevel_RPG
                         cmd2.Parameters.AddWithValue("@username", TextboxUsername.Text);
                         MessageBox.Show("Logged in successfully!\nClick OK to continue.","Login Success",MessageBoxButton.OK,MessageBoxImage.Information);
                         LoggedInView.LoggedInUser = TextboxUsername.Text;
-                        LoggedInView.LoggedInUserID = Convert.ToString(cmd2.ExecuteScalar());
+                        LoggedInView.LoggedInUserID = (int)cmd2.ExecuteScalar();
                         LoggedInView dashboard = new LoggedInView();
                         var parentWindow = Window.GetWindow(this);
                         dashboard.Show();
