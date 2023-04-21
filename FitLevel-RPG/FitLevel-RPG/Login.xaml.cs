@@ -76,15 +76,11 @@ namespace FitLevel_RPG
             {
                 sqlCon.Close();
             }
-            
-        }
-        
-        
+        } 
 
         private void ForgotPasswordClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("./PasswordReset/ResetPassword.xaml", UriKind.Relative));
         }
     }
-
 }

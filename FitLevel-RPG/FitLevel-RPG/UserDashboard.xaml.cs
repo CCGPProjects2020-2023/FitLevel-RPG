@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using Plotly.NET;
+using OxyPlot;
+using OxyPlot.Axes;
+using OxyPlot.Series;
 
 namespace FitLevel_RPG
 {
@@ -85,27 +88,45 @@ namespace FitLevel_RPG
                 sqlCon.Close();
             }
 
-            // Create a trace
-            var trace = new Trace("scatter");
-            trace.SetValue("x", dates);
-            trace.SetValue("y", volumes);
+            var lastDatesValues = dates.Skip(Math.Max(0, dates.Count - 10)).Take(10);
+            var lastVolumesValues = volumes.Skip(Math.Max(0, volumes.Count - 10)).Take(10);
+            var plotModel = new PlotModel
+            {
+                Title = "Example Plot",             // Reduce the padding and margin around the plot area
+                Padding = new OxyThickness(50),
+                PlotMargins = new OxyThickness(0),
+                PlotAreaBorderThickness = new OxyThickness(0)
+            };
 
-            // Create a layout
-            var layout = new Layout();
-            layout.SetValue("title", "Workout Volume Over Time");
+            var lineSeries = new LineSeries();
 
-            // Create a chart
-            var chart = Chart.Plot(trace);
-            chart.WithLayout(layout);
+            for (int i = 0; i < lastVolumesValues.Count(); i++)
+            {
+                lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(lastDatesValues.ElementAt(i)), lastVolumesValues.ElementAt(i)));
+            }
 
-            // Display the chart
-            chart.Show();
+            plotModel.Series.Add(lineSeries);
 
-            currentUserLevel.Content = "Current Lvl: " + currentLevel;
+            MyPlot.Model = plotModel;
+
+            currentUserLevel.Content = "Current Lvl: " + levelNumber;
             currentXpLabel.Content = "Current XP: " + currentXP;
             requiredXpLabel.Content = "Next Level at: " + nextLevelXP + " XP";
             xpPercentLabel.Content = "Level Progress - " + (currentXP / nextLevelXP * 100) + "%";
             xpBar.Value = currentXP;
+
+            
+        }
+        private void ModifyUserInfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                NavigationService.Navigate(new Uri("ModifyUserInfo.xaml", UriKind.Relative));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
+    "net6.0-windows8.0": {
       "Castle.Core/5.1.0": {
         "type": "package",
         "dependencies": {
@@ -14,23 +14,6 @@
         },
         "runtime": {
           "lib/net6.0/Castle.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DynamicObj/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "6.0.2",
-          "Newtonsoft.Json": "13.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/DynamicObj.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/DynamicObj.dll": {
             "related": ".xml"
           }
         }
@@ -63,83 +46,6 @@
         "build": {
           "buildTransitive/netcoreapp3.0/EntityFramework.props": {},
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
-        }
-      },
-      "FSharp.Core/6.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/FSharp.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/FSharp.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        },
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
-      "Giraffe.ViewEngine/1.4.0": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "5.0.0"
-        },
-        "compile": {
-          "lib/net5.0/Giraffe.ViewEngine.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0/Giraffe.ViewEngine.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -664,37 +570,57 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "OxyPlot.Core/2.1.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/netstandard2.0/OxyPlot.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/netstandard2.0/OxyPlot.dll": {
             "related": ".xml"
           }
         }
       },
-      "Plotly.NET/4.0.0": {
+      "OxyPlot.Wpf/2.1.2": {
         "type": "package",
         "dependencies": {
-          "DynamicObj": "2.0.0",
-          "FSharp.Core": "6.0.2",
-          "Giraffe.ViewEngine": "1.4.0",
-          "Newtonsoft.Json": "13.0.1"
+          "OxyPlot.Core": "2.1.2",
+          "OxyPlot.Wpf.Shared": "2.1.2"
         },
         "compile": {
-          "lib/netstandard2.0/Plotly.NET.dll": {
-            "related": ".pdb;.xml"
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Plotly.NET.dll": {
-            "related": ".pdb;.xml"
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "related": ".xml"
           }
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "OxyPlot.Wpf.Shared/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
@@ -1197,19 +1123,6 @@
         "readme.txt"
       ]
     },
-    "DynamicObj/2.0.0": {
-      "sha512": "26GDec7PIgj/vyRGk+Ijogk2PU24ltqy9s2fQudJtXik0nLU56Ydq/XXNYWMRBxn9HtFiSFigOMQ3yZ2HavnVA==",
-      "type": "package",
-      "path": "dynamicobj/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dynamicobj.2.0.0.nupkg.sha512",
-        "dynamicobj.nuspec",
-        "lib/netstandard2.0/DynamicObj.dll",
-        "lib/netstandard2.0/DynamicObj.xml"
-      ]
-    },
     "EntityFramework/6.4.4": {
       "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "type": "package",
@@ -1265,68 +1178,6 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
-      ]
-    },
-    "FSharp.Core/6.0.2": {
-      "sha512": "8GZqv6buY71KQlWT+cl2eMi+aNX9xQ61RgI3Pzv9zPxPOX6tWCLRrBj0MYQ3h871r2RhiHUl7f0AXUD/POr8eA==",
-      "type": "package",
-      "path": "fsharp.core/6.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "contentFiles/any/netstandard2.0/FSharp.Core.xml",
-        "contentFiles/any/netstandard2.1/FSharp.Core.xml",
-        "fsharp.core.6.0.2.nupkg.sha512",
-        "fsharp.core.nuspec",
-        "lib/netstandard2.0/FSharp.Core.dll",
-        "lib/netstandard2.0/FSharp.Core.xml",
-        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/FSharp.Core.dll",
-        "lib/netstandard2.1/FSharp.Core.xml",
-        "lib/netstandard2.1/cs/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/de/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/es/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/fr/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/it/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/ja/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/ko/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/pl/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/ru/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
-      ]
-    },
-    "Giraffe.ViewEngine/1.4.0": {
-      "sha512": "gWzlp8KGDLaPHMm/xGzfLT1e9wZaJhBKhEuMsPRBSn7wAMkSgMcaqJlWl8mFGCcOOx0r9UyDJvCJJQyljYmo+g==",
-      "type": "package",
-      "path": "giraffe.viewengine/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "giraffe-64x64.png",
-        "giraffe.viewengine.1.4.0.nupkg.sha512",
-        "giraffe.viewengine.nuspec",
-        "lib/net5.0/Giraffe.ViewEngine.dll",
-        "lib/net5.0/Giraffe.ViewEngine.pdb",
-        "lib/net5.0/Giraffe.ViewEngine.xml",
-        "lib/netstandard2.0/Giraffe.ViewEngine.dll",
-        "lib/netstandard2.0/Giraffe.ViewEngine.pdb",
-        "lib/netstandard2.0/Giraffe.ViewEngine.xml"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -2076,46 +1927,62 @@
         "version.txt"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "OxyPlot.Core/2.1.2": {
+      "sha512": "/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "oxyplot.core/2.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.dll",
+        "lib/net40/OxyPlot.xml",
+        "lib/net45/OxyPlot.dll",
+        "lib/net45/OxyPlot.xml",
+        "lib/netstandard1.0/OxyPlot.dll",
+        "lib/netstandard1.0/OxyPlot.xml",
+        "lib/netstandard2.0/OxyPlot.dll",
+        "lib/netstandard2.0/OxyPlot.xml",
+        "oxyplot.core.2.1.2.nupkg.sha512",
+        "oxyplot.core.nuspec"
       ]
     },
-    "Plotly.NET/4.0.0": {
-      "sha512": "5MBzijtCylmEDsVH0mNYlDM/hQr25ELtHBt7Evr9srsCOs5pU3NFACED0MAhHxzPCQpINjMcBQynrzgkV9KdqQ==",
+    "OxyPlot.Wpf/2.1.2": {
+      "sha512": "udX9T1YC5BnnTZkVSNgJqvzXLaBcZDYG32YHWlDELk1UDWQeJi0Z2jBLoIiv4hcW16N4ptYO5cGC3e8m5/z0hw==",
       "type": "package",
-      "path": "plotly.net/4.0.0",
+      "path": "oxyplot.wpf/2.1.2",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.0/Plotly.NET.dll",
-        "lib/netstandard2.0/Plotly.NET.pdb",
-        "lib/netstandard2.0/Plotly.NET.xml",
-        "logo.png",
-        "plotly.net.4.0.0.nupkg.sha512",
-        "plotly.net.nuspec"
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.Wpf.dll",
+        "lib/net40/OxyPlot.Wpf.xml",
+        "lib/net45/OxyPlot.Wpf.dll",
+        "lib/net45/OxyPlot.Wpf.xml",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.dll",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.xml",
+        "oxyplot.wpf.2.1.2.nupkg.sha512",
+        "oxyplot.wpf.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "OxyPlot.Wpf.Shared/2.1.2": {
+      "sha512": "6Cj7UET7AS5gVf77+avKG+PzaKQhTdqRYbyBTCPWW9JEbAsojpNdLICjVXO+5o/HP+DjshZJ6oCFw8eyRnHtCA==",
+      "type": "package",
+      "path": "oxyplot.wpf.shared/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.Wpf.Shared.dll",
+        "lib/net40/OxyPlot.Wpf.Shared.xml",
+        "lib/net45/OxyPlot.Wpf.Shared.dll",
+        "lib/net45/OxyPlot.Wpf.Shared.xml",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.xml",
+        "oxyplot.wpf.shared.2.1.2.nupkg.sha512",
+        "oxyplot.wpf.shared.nuspec"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -2905,13 +2772,13 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
+    "net6.0-windows8.0": [
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.5",
       "Microsoft.Extensions.Configuration.UserSecrets >= 6.0.0",
-      "Plotly.NET >= 4.0.0",
+      "OxyPlot.Wpf >= 2.1.2",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -2932,15 +2799,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0-windows8.0": {
+          "targetAlias": "net6.0-windows8.0",
           "projectReferences": {}
         }
       },
@@ -2951,8 +2818,8 @@
       }
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net6.0-windows8.0": {
+        "targetAlias": "net6.0-windows8.0",
         "dependencies": {
           "EntityFramework": {
             "target": "Package",
@@ -2974,9 +2841,9 @@
             "target": "Package",
             "version": "[6.0.0, )"
           },
-          "Plotly.NET": {
+          "OxyPlot.Wpf": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[2.1.2, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

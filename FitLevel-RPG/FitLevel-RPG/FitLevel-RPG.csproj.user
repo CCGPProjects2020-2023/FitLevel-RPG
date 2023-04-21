@@ -10,6 +10,9 @@
     <Compile Update="AddSet.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ModifyUserInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PasswordReset\ChangePassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddSet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ModifyUserInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PasswordReset\ChangePassword.xaml">

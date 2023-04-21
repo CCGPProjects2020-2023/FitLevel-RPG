@@ -25,31 +25,34 @@ namespace FitLevel_RPG
         public LoggedInView()
         {
             InitializeComponent();
-            Main.Content = new UserDashboard(); // The dashboard is the first thing the user sees
+            SetMainContent(new UserDashboard()); // The dashboard is the first thing the user sees
             welcomeTextBlock.Text = "Welcome, " + LoggedInUser.ToUpper() + "!";
             versionInfo.Text = VersionInfo.getVersionInfo();
         }
 
-
+        public void SetMainContent(object content)
+        {
+            Main.Content = content;
+        }
         private void DashboardButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new UserDashboard();
+            SetMainContent(new UserDashboard());
         }
         
 
         private void TrackWorkoutButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new TrackWorkout();
+            SetMainContent(new TrackWorkout());
         }
 
         private void WorkoutOverviewButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new PlanNextWorkout();
+            SetMainContent(new PlanNextWorkout());
         }
 
         private void PremadeWorkoutsButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new PreMadeWorkouts();
+            SetMainContent(new PreMadeWorkouts());
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
@@ -57,7 +60,7 @@ namespace FitLevel_RPG
             var parentWindow = Window.GetWindow(this);
             LoggedInUser = "";
             LoggedInUser = null;
-            MainWindow mw = new MainWindow();
+            MainWindow mw = new();
             mw.Show();
             parentWindow.Close();
         }
