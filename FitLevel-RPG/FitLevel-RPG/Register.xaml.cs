@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,23 +28,23 @@ namespace FitLevel_RPG
             InitializeComponent();
             
         }
-
+       
         private void RegisterButtonClick(object sender, RoutedEventArgs e)
         {
             bool passwordCheckFail = true;
             bool blankFields = true;
             
             // Checks for matching password
-            if (passwordTextbox.Password.Length < 5 && passwordTextbox.Password.ToString() != "")
+            if (passwordTextbox.Password.Length < 8 && passwordTextbox.Password.ToString() != "")
             {
-                passwordInfoText.Text = "(Must be 5+ characters long)";
+                passwordInfoText.Text = "(Must be 8+ characters long)";
                 errorTextblock.Visibility = Visibility.Hidden;
                 passwordCheckFail = true;
                 passwordInfoText.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFEF5555"));
 
-                //MessageBox.Show("Password must be at least 5 characters long.");
+                //MessageBox.Show("Password must be at least 8 characters long.");
             }
-            else if(confirmPasswordTextbox.Password.ToString() == passwordTextbox.Password.ToString() && passwordTextbox.Password.Length >= 5)
+            else if(confirmPasswordTextbox.Password.ToString() == passwordTextbox.Password.ToString() && passwordTextbox.Password.Length >= 8)
             {
                 passwordInfoText.Text = "Password Looks Good!";
                 passwordCheckFail = false;
