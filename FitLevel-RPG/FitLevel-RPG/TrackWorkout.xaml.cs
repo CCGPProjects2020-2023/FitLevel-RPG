@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Threading;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace FitLevel_RPG
 {
@@ -23,6 +25,7 @@ namespace FitLevel_RPG
     /// 
     public partial class TrackWorkout : Page
     {
+        DataTable dt = new DataTable("WorkoutPlan");
         DispatcherTimer t1 = new DispatcherTimer();
         Stopwatch sw;
         List<string> list = new List<string>();
@@ -35,6 +38,7 @@ namespace FitLevel_RPG
 
             t1.Tick += T1_Tick;
             t1.Start();
+            FillData();
         }
 
         private void BeginButton_Click(object sender, RoutedEventArgs e)
@@ -43,6 +47,23 @@ namespace FitLevel_RPG
             StartTimerButton.IsEnabled = false;
 
         }
+
+        private void FillData()
+        {
+            string CmdString = string.Empty;
+            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            {
+                CmdString = "SELECT id AS [ID], wset AS [Set], sreps AS Reps, sweight AS Weight, CONVERT(VARCHAR(10), createdate ,111) AS Date FROM WorkoutPlan WHERE username=@username";
+
+                SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
+                cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(dt);
+
+                dataGrid.ItemsSource = dt.DefaultView;
+            }
+        }
+
 
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
