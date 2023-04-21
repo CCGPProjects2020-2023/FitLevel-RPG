@@ -28,7 +28,7 @@
         <TextBlock x:Name="textBlock2_Copy3" HorizontalAlignment="Left" Margin="342,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Text="Begin a walking pace for 2 minutes"/>
         <TextBlock x:Name="textBlock1_Copy4" HorizontalAlignment="Left" Margin="204,274,0,0" TextWrapping="Wrap" Text="Repeat" VerticalAlignment="Top" Height="21" Width="85"/>
         <TextBlock x:Name="textBlock2_Copy4" HorizontalAlignment="Left" Margin="342,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Text="Repeat once more from step 1 after Begin."/>
-        <Button x:Name="ButtonEnd" Content="End Workout" HorizontalAlignment="Left" Margin="203,304,0,0" VerticalAlignment="Top" Click="EndWorkout_Click"/>
+        <Button x:Name="ButtonEnd" Content="End Workout" HorizontalAlignment="Left" Margin="203,304,0,0" VerticalAlignment="Top" Click="EndWorkout_Click" IsEnabled="False"/>
         <TextBlock x:Name="xpRewardText" HorizontalAlignment="Left" Margin="204,330,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FF15C52F" Visibility="Hidden"/>
         <TextBlock x:Name="timeEstimateText" HorizontalAlignment="Left" Margin="339,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FF39CE8E"/>
 

@@ -33,7 +33,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
         {
             InitializeComponent();
             xpRewardText.Visibility = Visibility.Hidden;
-            ButtonEnd.IsEnabled = true;
+            ButtonEnd.IsEnabled = false;
             timeEstimateText.Text = "Estimated time to complete: " + timeEstimate;
             sw = new Stopwatch();
             t1 = new DispatcherTimer();
@@ -48,6 +48,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
         {
             sw.Start();
             ButtonBegin.IsEnabled = false;
+            ButtonEnd.IsEnabled = true;
 
         }
         private void T1_Tick(object sender, EventArgs e)
