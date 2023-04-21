@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.POIFS.Properties;
+using System;
 using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +11,7 @@ namespace FitLevel_RPG
     /// <summary>
     /// Interaction logic for ModifyUserInfo.xaml
     /// </summary>
-    public partial class ModifyUserInfo : Window
+    public partial class ModifyUserInfo : Page
     {
         int levelId = 0;
         
@@ -113,8 +114,8 @@ namespace FitLevel_RPG
                         cmd2.Parameters.AddWithValue("@level_id", levelId);
                         cmd2.ExecuteScalar();
                         MessageBox.Show("User Updated!");
-                        var frame = Parent as Frame;
-                        frame.NavigationService.Navigate(new Uri("ModifyUserInfo.xaml", UriKind.Relative));
+                        
+                        NavigationService.Navigate(new Uri("ModifyUserInfo.xaml", UriKind.Relative));
                     }
                     else if (passwordTextbox.Password.ToString() == "")
                     {
@@ -140,8 +141,8 @@ namespace FitLevel_RPG
 
         private void CancelButtonClick(object sender, RoutedEventArgs e)
         {
-            var frame = Parent as Frame;
-            frame.NavigationService.Navigate(new Uri("Dashboard.xaml", UriKind.Relative));
+            
+            NavigationService.Navigate(new Uri("UserDashboard.xaml", UriKind.Relative));
         }
     }
 }

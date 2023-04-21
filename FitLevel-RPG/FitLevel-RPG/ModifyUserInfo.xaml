@@ -1,4 +1,4 @@
-﻿<Window x:Class="FitLevel_RPG.ModifyUserInfo"
+﻿<Page x:Class="FitLevel_RPG.ModifyUserInfo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -30,4 +30,4 @@
 		<TextBlock x:Name="passwordInfoText" HorizontalAlignment="Left" Margin="410,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFDA8926"><Run Text="(Must be 5+ characters long)"/><LineBreak/><Run/></TextBlock>
 		<TextBlock x:Name="formInfoError" HorizontalAlignment="Left" Margin="202,76,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFEF5555" Visibility="Hidden"/>
 	</Grid>
-</Window>
+</Page>
