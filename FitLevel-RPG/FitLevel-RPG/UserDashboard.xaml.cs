@@ -61,7 +61,7 @@ namespace FitLevel_RPG
                     
                     // Calculate total training volume per workout
                     String query2 = @"
-                        SELECT W.date, SUM(S.repetitions * S.weight) AS volume
+                        SELECT W.user_id, SUM(S.repetitions * S.weight) AS volume
                         FROM Workout W
                         JOIN Exercise E ON W.workout_id = E.workout_id
                         JOIN [Set] S ON E.exercise_id = S.exercise_id
