@@ -62,14 +62,15 @@ namespace FitLevel_RPG
 
         private void addExercise_Click(object sender, RoutedEventArgs e)
         {
-            AddSet aw = new AddSet();
-            aw.Show();
+            AddExercise ae = new AddExercise();
+            ae.Show();
         }
 
+        // FUTURE FEATURE - Delete
         private void deletePlanButton_Click(object sender, RoutedEventArgs e)
         {
          
-            //FIX
+            //Needs adjustments
             SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
@@ -81,7 +82,7 @@ namespace FitLevel_RPG
                     String query = "SELECT COUNT(1) FROM Workout WHERE workout_id=@workout_id";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Parameters.AddWithValue("@workout_id", deleteIdTextbox.Text);
+                    cmd.Parameters.AddWithValue("@workout_id", Convert.ToInt32(deleteIdTextbox.Text));
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
 
                     if (count == 1)
@@ -91,7 +92,7 @@ namespace FitLevel_RPG
                         SqlCommand cmd2 = new SqlCommand(deletePlan, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
                         cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
-                        cmd2.Parameters.AddWithValue("@wid", deleteIdTextblock.Text);
+                        cmd2.Parameters.AddWithValue("@wid", Convert.ToInt32(deleteIdTextblock.Text));
                         cmd2.ExecuteScalar();
                         dt.Rows.Clear();
                         FillData();
@@ -124,7 +125,8 @@ namespace FitLevel_RPG
 
         private void setButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AddSet aw = new AddSet();
+            aw.Show();
         }
     }
 }

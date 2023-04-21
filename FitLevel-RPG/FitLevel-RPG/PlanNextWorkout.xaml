@@ -17,9 +17,9 @@
         <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Click="BtnClickWorkoutHistory"/>
         <Button x:Name="setButton" Content="Add Set" HorizontalAlignment="Left" Margin="178,255,0,0" VerticalAlignment="Top" Width="71" Click="setButton_Click"/>
         <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="178,100,92,126" SelectionChanged="dataGrid_SelectionChanged"/>
-        <Button x:Name="deletePlanButton" Content="Delete Selected Plan" HorizontalAlignment="Left" Margin="518,312,0,0" VerticalAlignment="Top" Click="deletePlanButton_Click" Width="121"/>
-        <TextBox x:Name="deleteIdTextbox" TextWrapping="Wrap" Margin="492,281,45,68"/>
-        <TextBlock x:Name="deleteIdTextblock" HorizontalAlignment="Left" Margin="492,259,0,0" TextWrapping="Wrap" Text="Enter ID you want to delete:" VerticalAlignment="Top"/>
+        <Button x:Name="deletePlanButton" Content="Delete Selected Plan" HorizontalAlignment="Left" Margin="518,312,0,0" VerticalAlignment="Top" Click="deletePlanButton_Click" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="deleteIdTextbox" TextWrapping="Wrap" Text="Coming soon." Margin="492,281,45,68" IsEnabled="False"/>
+        <TextBlock x:Name="deleteIdTextblock" HorizontalAlignment="Left" Margin="492,259,0,0" TextWrapping="Wrap" Text="Delete by ID coming soon!" VerticalAlignment="Top"/>
 
 
     </Grid>
