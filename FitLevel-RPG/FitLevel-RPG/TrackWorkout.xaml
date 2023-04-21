@@ -12,8 +12,11 @@
         <StackPanel Grid.Column="0" Margin="10" Width ="5">
 
         </StackPanel>
+        <TextBlock x:Name="timerTextBlock" HorizontalAlignment="Center" Margin="0,77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFB15DE4"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" Text="Track Workout" VerticalAlignment="Top" FontSize="18"/>
         <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="135,113,135,113"/>
         <Button Content="Add Set" HorizontalAlignment="Left" Margin="190,295,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="StartTimerButton" Content="Start" HorizontalAlignment="Left" Margin="443,70,0,0" VerticalAlignment="Top" Click="BeginButton_Click"/>
+        <Button x:Name="EndTimerButton" Content="Stop" HorizontalAlignment="Left" Margin="501,70,0,0" VerticalAlignment="Top" Click="StopButton_Click"/>
     </Grid>
 </Page>
