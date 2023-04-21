@@ -40,7 +40,7 @@ namespace FitLevel_RPG
                 {
                     // Login check
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM Accounts WHERE email=@email";
+                    String query = "SELECT COUNT(1) FROM [User] WHERE email=@email";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@email", Email);
@@ -62,7 +62,7 @@ namespace FitLevel_RPG
                         if (count == 1 && TextboxConfirmPassword.Password.ToString() == TextboxPassword.Password.ToString())
                         {
 
-                            String passwordUpdate = "UPDATE Accounts SET password=@password, verifycode=NULL WHERE email=@email";
+                            String passwordUpdate = "UPDATE [User] SET password=@password, verifycode=NULL WHERE email=@email";
 
                             SqlCommand cmd2 = new SqlCommand(passwordUpdate, sqlCon);
                             cmd2.CommandType = System.Data.CommandType.Text;

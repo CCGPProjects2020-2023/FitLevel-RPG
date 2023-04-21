@@ -37,8 +37,8 @@ namespace FitLevel_RPG
                 {
                     // Login check
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM Accounts WHERE email=@email AND verifycode=@code";
-                    String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+                    String query = "SELECT COUNT(1) FROM [User] WHERE email=@email AND verifycode=@code";
+                    String resetCode = "UPDATE [User] SET verifycode=NULL WHERE email=@email";
 
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
@@ -63,7 +63,7 @@ namespace FitLevel_RPG
                 }
             } catch (Exception ex)
             {
-                String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+                String resetCode = "UPDATE [User] SET verifycode=NULL WHERE email=@email";
                 SqlCommand cmd2 = new SqlCommand(resetCode, sqlCon);
                 cmd2.Parameters.AddWithValue("@email", TextboxEmail.Text);
                 cmd2.ExecuteScalar();
@@ -72,7 +72,7 @@ namespace FitLevel_RPG
             }
             finally
             {
-                String resetCode = "UPDATE Accounts SET verifycode=NULL WHERE email=@email";
+                String resetCode = "UPDATE [User] SET verifycode=NULL WHERE email=@email";
                 SqlCommand cmd2 = new SqlCommand(resetCode, sqlCon);
                 cmd2.Parameters.AddWithValue("@email", TextboxEmail.Text);
                 cmd2.ExecuteScalar();

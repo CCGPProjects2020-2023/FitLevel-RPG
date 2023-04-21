@@ -121,5 +121,10 @@ namespace FitLevel_RPG
             dt.Rows.Clear();           
             FillData();
         }
+
+        private void setButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
