@@ -75,23 +75,23 @@ namespace FitLevel_RPG
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
-                    // Login check
+                    
 
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM WorkoutPlan WHERE id=@id";
+                    String query = "SELECT COUNT(1) FROM Workout WHERE workout_id=@workout_id";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Parameters.AddWithValue("@id", deleteIdTextbox.Text);
+                    cmd.Parameters.AddWithValue("@workout_id", deleteIdTextbox.Text);
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
 
                     if (count == 1)
                     {
 
-                        String deletePlan = "DELETE FROM WorkoutPlan WHERE id=@id AND username=@username";
+                        String deletePlan = "DELETE FROM Workout WHERE user_id=@user_id AND workout_id=@wid";
                         SqlCommand cmd2 = new SqlCommand(deletePlan, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
-                        cmd2.Parameters.AddWithValue("@id", deleteIdTextbox.Text);
-                        cmd2.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                        cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
+                        cmd2.Parameters.AddWithValue("@wid", deleteIdTextblock.Text);
                         cmd2.ExecuteScalar();
                         dt.Rows.Clear();
                         FillData();
