@@ -48,10 +48,10 @@ namespace FitLevel_RPG
 
             {
                 //FIX
-                CmdString = "SELECT id AS [ID], wset AS [Set], sreps AS Reps, sweight AS Weight, CONVERT(VARCHAR(10), createdate ,111) AS Date FROM WorkoutPlan WHERE username=@username";
+                CmdString = "SELECT workout_id AS [ID], start_time AS start_time, end_time AS end_time FROM Workout WHERE user_id=@user_id";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
-                cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);              
+                cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
 
