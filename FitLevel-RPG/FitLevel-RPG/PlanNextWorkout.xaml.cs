@@ -48,7 +48,7 @@ namespace FitLevel_RPG
 
             {
                 //FIX
-                CmdString = "SELECT workout_id AS [ID], start_time AS start_time, end_time AS end_time FROM Workout WHERE user_id=@user_id";
+                CmdString = "SELECT Exercise.type AS type, Exercise.name AS name, Exercise.description AS description FROM Exercise INNER JOIN Workout ON Workout.workout_id = Exercise.workout_id";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
                 cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
@@ -62,7 +62,7 @@ namespace FitLevel_RPG
 
         private void addExercise_Click(object sender, RoutedEventArgs e)
         {
-            AddExercise ae = new AddExercise();
+            AddPlannedExercise ae = new AddPlannedExercise();
             ae.Show();
         }
 
