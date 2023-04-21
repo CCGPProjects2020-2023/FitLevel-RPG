@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\R\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\App.xaml
-16729998158
+17-424365797
 
-211111201022
+22-1396242613
 229-531598741
-AddWorkout.xaml;LoggedInView.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;PlanNextWorkout.xaml;Pre-Made Workouts\BeginnerCardio.xaml;Pre-Made Workouts\IntermediateStarterWarmup.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;WorkoutHistory.xaml;WorkoutsOverview.xaml;
+AddExercise.xaml;AddSet.xaml;LoggedInView.xaml;Login.xaml;MainWindow.xaml;PasswordReset\ChangePassword.xaml;PasswordReset\ResetPassword.xaml;PasswordReset\VerifyCode.xaml;PlanNextWorkout.xaml;Pre-Made Workouts\BeginnerCardio.xaml;Pre-Made Workouts\IntermediateStarterWarmup.xaml;PreMadeWorkouts.xaml;Register.xaml;TrackWorkout.xaml;UserDashboard.xaml;WorkoutHistory.xaml;WorkoutsOverview.xaml;
 
 False
 
