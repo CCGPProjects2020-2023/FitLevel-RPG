@@ -98,7 +98,7 @@ namespace FitLevel_RPG
                     {
                         formInfoError.Visibility = Visibility.Hidden;
                         errorTextblock.Visibility = Visibility.Hidden;
-                        String createLevel = "INSERT INTO Level (level_number, required_experience_points) VALUES (0, 100); SELECT SCOPE_IDENTITY();";
+                        String createLevel = "INSERT INTO Level (level_number, required_experience_points) VALUES (1, 100); SELECT SCOPE_IDENTITY();";
                         SqlCommand cmd2 = new SqlCommand(createLevel, sqlCon);
                         int levelId = Convert.ToInt32(cmd2.ExecuteScalar());
 

@@ -1,8 +1,8 @@
 ﻿DECLARE @cmds VARCHAR(MAX)
 
-SELECT @cmds = 'DROP FUNCTION ' + STRING_AGG(name, ',')
-FROM sys.objects
-WHERE type = 'FN'
+SELECT @cmds = 'DROP TABLE ' + STRING_AGG('[' + name + ']', ',')
+WITHIN GROUP (ORDER BY create_date DESC)
+FROM sys.tables
 
 EXEC(@cmds)
 GO
