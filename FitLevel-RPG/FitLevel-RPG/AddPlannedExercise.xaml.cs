@@ -42,7 +42,7 @@ namespace FitLevel_RPG
                         String addExercise = "INSERT INTO Exercise(workout_id, [type], [name], [description]) VALUES(@workout_id, @type, @name, @description); SELECT SCOPE_IDENTITY();";
                         SqlCommand cmd = new SqlCommand(addExercise, sqlCon);
                         cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.Parameters.AddWithValue("@workout_id", TrackWorkout.workoutID);
+                        cmd.Parameters.AddWithValue("@workout_id", PlanNextWorkout.workoutID);
                         cmd.Parameters.AddWithValue("@type", typeTextbox.Text);
                         cmd.Parameters.AddWithValue("@name", nameTextbox.Text);
                         cmd.Parameters.AddWithValue("@description", descTextbox.Text);
