@@ -78,6 +78,8 @@ namespace FitLevel_RPG.Pre_Made_Workouts
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
                     if (count == 1)
                     {
+                        // NEEDS TO BE UPDATED WITH NEW SQL QUERIES
+
                         ButtonEnd.IsEnabled = false;
                         /*String xpUpdate = "UPDATE Experience SET experience_points + @xpAmount WHERE user_id=@user_id";
                         SqlCommand cmd2 = new SqlCommand(xpUpdate, sqlCon);

@@ -27,7 +27,7 @@ namespace FitLevel_RPG
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
