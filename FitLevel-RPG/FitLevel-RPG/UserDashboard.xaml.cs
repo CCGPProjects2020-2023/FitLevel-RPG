@@ -29,11 +29,14 @@ namespace FitLevel_RPG
         {
             InitializeComponent();
             SqlConnection sqlCon = new(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection sqlCon2 = new(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
                     sqlCon.Open();
+                    
                     // Calculate total experience and retrieve level information
                     String query = @"
                         SELECT SUM(E.experience_points), L.level_number
@@ -64,8 +67,9 @@ namespace FitLevel_RPG
                         JOIN Sets S ON E.exercise_id = S.exercise_id
                         GROUP BY W.date
                         ORDER BY W.date";
-
-                    SqlCommand cmd2 = new(query2, sqlCon);
+                   
+                    sqlCon2.Open();
+                    SqlCommand cmd2 = new(query2, sqlCon2);
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     using SqlDataReader reader2 = cmd2.ExecuteReader();
@@ -77,6 +81,7 @@ namespace FitLevel_RPG
                         dates.Add(date);
                         volumes.Add(volume);
                     }
+                    sqlCon2.Close();
                 }
             }
             catch (Exception ex)
@@ -86,6 +91,9 @@ namespace FitLevel_RPG
             finally
             {
                 sqlCon.Close();
+                sqlCon2.Close();
+
+
             }
 
             var lastDatesValues = dates.Skip(Math.Max(0, dates.Count - 10)).Take(10);
@@ -122,6 +130,7 @@ namespace FitLevel_RPG
             try
             {
                 NavigationService.Navigate(new Uri("ModifyUserInfo.xaml", UriKind.Relative));
+
             }
             catch (Exception ex)
             {
