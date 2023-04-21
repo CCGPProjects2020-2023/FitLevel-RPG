@@ -26,9 +26,12 @@ namespace FitLevel_RPG
     public partial class TrackWorkout : Page
     {
         DataTable dt = new DataTable("WorkoutPlan");
+
         DispatcherTimer t1 = new DispatcherTimer();
         Stopwatch sw;
         List<string> list = new List<string>();
+
+        SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         public TrackWorkout()
         {
             InitializeComponent();
@@ -41,10 +44,43 @@ namespace FitLevel_RPG
             FillData();
         }
 
+        // ID Containers
+        static public int workoutID;
+        static public int exerciseID;
+
         private void BeginButton_Click(object sender, RoutedEventArgs e)
         {
             sw.Start();
             StartTimerButton.IsEnabled = false;
+           
+            try
+            {
+                if (sqlCon.State == System.Data.ConnectionState.Closed)
+                {
+                    // NEEDS FIXED. SQL IS IN WRONG ORDER I THINK
+                    sqlCon.Open();
+                    String startWorkoutQuery = "INSERT INTO Workout (user_id, start_time) VALUES (@user_id, @start_time); SELECT SCOPE_IDENTITY();";
+                    SqlCommand cmd = new SqlCommand(startWorkoutQuery, sqlCon);
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
+                    cmd.Parameters.AddWithValue("@start_time", DateTime.Now);
+                    workoutID = Convert.ToInt32(cmd.ExecuteScalar());                 
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Unkown error has occured.", "Error");
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+            finally
+            {
+
+                sqlCon.Close();
+            }
 
         }
 
@@ -69,6 +105,36 @@ namespace FitLevel_RPG
         {
             sw.Stop();
 
+            try
+            {
+                if (sqlCon.State == System.Data.ConnectionState.Closed)
+                {
+                    // FIX
+                    sqlCon.Open();
+                    String startWorkoutQuery = "UPDATE Workout SET end_time=@end_time WHERE workout_id=@workout_id AND user_id=@user_id";
+                    SqlCommand cmd = new SqlCommand(startWorkoutQuery, sqlCon);
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Parameters.AddWithValue("@workout_id", workoutID);
+                    cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
+                    cmd.Parameters.AddWithValue("@end_time", DateTime.Now);
+                    cmd.ExecuteScalar();
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Unkown error has occured.", "Error");
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+            finally
+            {
+
+                sqlCon.Close();
+            }
+
         }
 
         private void T1_Tick(object sender, EventArgs e)
@@ -78,6 +144,18 @@ namespace FitLevel_RPG
 
             string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
             timerTextBlock.Text = "Elapsed Time: " + elapsedTime;
+        }
+
+        private void AddExercise_Click(object sender, RoutedEventArgs e)
+        {
+            AddExercise ae = new AddExercise();
+            ae.Show();
+        }
+
+        private void AddSetButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddSet addset = new AddSet();
+            addset.Show();
         }
     }
 }

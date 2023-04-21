@@ -18,11 +18,12 @@ namespace FitLevel_RPG
     /// <summary>
     /// Interaction logic for AddWorkout.xaml
     /// </summary>
-    public partial class AddWorkout : Window
+    public partial class AddSet : Window
     {
-        public AddWorkout()
+        public AddSet()
         {
             InitializeComponent();
+            exerciseIdTextbox.Text = TrackWorkout.exerciseID.ToString();
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
@@ -40,20 +41,17 @@ namespace FitLevel_RPG
                     // Login check
                     sqlCon.Open();
                     
-                    if (setTextbox.Text != "" && repsTextbox.Text != "" && weightTextbox.Text != "")
+                    if (repsTextbox.Text != "" && weightTextbox.Text != "")
                     {
                         
-                        String addPlan = "INSERT INTO WorkoutPlan(wset, sreps, sweight, username, createdate) VALUES(@set, @reps, @weight, @username, @date)";
+                        String addPlan = "INSERT INTO [SET](exercise_id, repetitions, [weight]) VALUES (@exercise_id, @reps, @weight)";
                         SqlCommand cmd2 = new SqlCommand(addPlan, sqlCon);
                         cmd2.CommandType = System.Data.CommandType.Text;
-                        cmd2.Parameters.AddWithValue("@set", setTextbox.Text);
                         cmd2.Parameters.AddWithValue("@reps", repsTextbox.Text);
                         cmd2.Parameters.AddWithValue("@weight", weightTextbox.Text);
-                        cmd2.Parameters.AddWithValue("@date", addDatePicker.SelectedDate);
-                        cmd2.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                        cmd2.Parameters.AddWithValue("@exercise_id", TrackWorkout.exerciseID);
                         cmd2.ExecuteScalar();
-                        MessageBox.Show("Plan Added! Click OK to close this window.");
-                        PlanNextWorkout pnw = new PlanNextWorkout();
+                        MessageBox.Show("Set Added! Click OK to close this window.");
                         this.Close();
                     }
                     else
@@ -63,7 +61,7 @@ namespace FitLevel_RPG
                 }
             }catch(InvalidCastException)
             {
-                MessageBox.Show("All fields must be a numeric value.");
+                MessageBox.Show("Invalid input type.");
             }
             catch (Exception ex)
             {

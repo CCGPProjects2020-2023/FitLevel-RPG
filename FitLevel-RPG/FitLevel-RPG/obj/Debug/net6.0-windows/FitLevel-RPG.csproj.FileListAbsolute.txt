@@ -589,6 +589,26 @@ C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.pdb
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.AssemblyReference.cache
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddExercise.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PlanNextWorkout.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\App.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.cache
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.lref
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.exe
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.deps.json
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.runtimeconfig.json
@@ -656,27 +676,7 @@ S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtime
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.AssemblyReference.cache
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PlanNextWorkout.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\App.g.cs
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.cache
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.lref
-S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.baml
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddExercise.baml
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.baml
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.baml
@@ -703,3 +703,5 @@ S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\refint\
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.pdb
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.g.cs
+S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.baml

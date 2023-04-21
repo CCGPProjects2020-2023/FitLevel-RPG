@@ -47,7 +47,7 @@ namespace FitLevel_RPG
             using (SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
 
             {
-
+                //FIX
                 CmdString = "SELECT id AS [ID], wset AS [Set], sreps AS Reps, sweight AS Weight, CONVERT(VARCHAR(10), createdate ,111) AS Date FROM WorkoutPlan WHERE username=@username";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
@@ -62,14 +62,14 @@ namespace FitLevel_RPG
 
         private void addExercise_Click(object sender, RoutedEventArgs e)
         {
-            AddWorkout aw = new AddWorkout();
+            AddSet aw = new AddSet();
             aw.Show();
         }
 
         private void deletePlanButton_Click(object sender, RoutedEventArgs e)
         {
          
-
+            //FIX
             SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
