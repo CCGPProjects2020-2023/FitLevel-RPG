@@ -64,5 +64,10 @@ namespace FitLevel_RPG
             mw.Show();
             parentWindow.Close();
         }
+
+        private void ModifyUserInfo_Click(object sender, RoutedEventArgs e)
+        {
+            SetMainContent(new ModifyUserInfo());
+        }
     }
 }

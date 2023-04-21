@@ -8,28 +8,28 @@
       d:DesignHeight="388" d:DesignWidth="743"
       Title="UserDashboard">
 
-	<Grid>
-		<TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="DASHBOARD" VerticalAlignment="Top" FontSize="18"/>
-		<TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" Text="Welcome to your Dashboard! Here you will be able to see all your level progress as well as metrics of how your fitness is progressing." VerticalAlignment="Top" Height="33" Width="418"/>
-		<ProgressBar x:Name="xpBar" HorizontalAlignment="Center" Height="27" Margin="0,87,0,0" VerticalAlignment="Top" Width="468"/>
-		<Label x:Name="currentXpLabel" Content="Label" HorizontalAlignment="Left" Margin="138,154,0,0" VerticalAlignment="Top"/>
-		<Label x:Name="xpPercentLabel" Content="% Placeholder" HorizontalAlignment="Center" Margin="0,62,0,0" VerticalAlignment="Top"/>
-		<Label x:Name="requiredXpLabel" Content="Label" HorizontalAlignment="Left" Margin="485,154,0,0" VerticalAlignment="Top"/>
-		<Label x:Name="currentUserLevel" Content="Label" HorizontalAlignment="Left" Margin="138,88,0,0" VerticalAlignment="Top"/>
-		<Separator HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Height="48" Width="743" RenderTransformOrigin="0.5,0.5" FontSize="18">
-			<Separator.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform AngleY="0.178"/>
-					<RotateTransform/>
-					<TranslateTransform Y="-1.096"/>
-				</TransformGroup>
-			</Separator.RenderTransform>
-		</Separator>
-		<oxy:PlotView x:Name="MyPlot" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" Height="259" Width="468"/>
-		<Button x:Name="btnModifyUserInfo" Content="Modify User Info" HorizontalAlignment="Left" Margin="610,119,0,0" VerticalAlignment="Top" Click="ModifyUserInfoButton_Click"/>
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="DASHBOARD" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" Text="Welcome to your Dashboard! Here you will be able to see all your level progress as well as metrics of how your fitness is progressing." VerticalAlignment="Top" Height="33" Width="418"/>
+        <ProgressBar x:Name="xpBar" HorizontalAlignment="Center" Height="27" Margin="0,87,0,0" VerticalAlignment="Top" Width="468"/>
+        <Label x:Name="currentXpLabel" Content="Label" HorizontalAlignment="Left" Margin="138,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="xpPercentLabel" Content="% Placeholder" HorizontalAlignment="Center" Margin="0,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="requiredXpLabel" Content="Label" HorizontalAlignment="Left" Margin="482,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="currentUserLevel" Content="Label" HorizontalAlignment="Left" Margin="138,88,0,0" VerticalAlignment="Top"/>
+        <Separator HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Height="48" Width="743" RenderTransformOrigin="0.5,0.5" FontSize="18">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.178"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-1.096"/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <oxy:PlotView x:Name="MyPlot" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Height="211" Width="468"/>
+        <Button x:Name="btnModifyUserInfo" Content="Modify User Info" HorizontalAlignment="Left" Margin="625,91,0,0" VerticalAlignment="Top" Click="ModifyUserInfoButton_Click"/>
 
 
 
-	</Grid>
+    </Grid>
 </Page>
