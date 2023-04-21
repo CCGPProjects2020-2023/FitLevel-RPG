@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ben8uBRrcgk50BVMcbCyTrpI8MC40G/IXEh8fLU6kTSSQoJnkKWMDUVDeYvc5cnSmmFakfhYZrQ5jjf7Ym0U6Q==",
+  "dgSpecHash": "tDjIuTYbYIlLRqX2385PWl+o/M/6EU3vnh//OeHTsDCNEsW8kuLi5lw6v+04jO+rEm73I3lVJdn2G2krCUCGJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\evanm\\Desktop\\New folder (4)\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
+  "projectFilePath": "S:\\FitLevel-RPG REPOS\\FitLevel-RPG\\FitLevel-RPG\\FitLevel-RPG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evanm\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\evanm\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
