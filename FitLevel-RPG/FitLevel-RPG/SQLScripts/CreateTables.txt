@@ -1,0 +1,50 @@
+﻿CREATE TABLE "Level"
+(
+	level_id INT IDENTITY PRIMARY KEY,
+	level_number INT NOT NULL,
+	required_experience_points INT NOT NULL,
+)
+
+CREATE TABLE "User"
+(
+	user_id INT IDENTITY PRIMARY KEY,
+	level_id INT NOT NULL REFERENCES "Level" (level_id),
+	username VARCHAR(40) NOT NULL UNIQUE,
+	password VARCHAR(40) NOT NULL,
+	email VARCHAR(40) NOT NULL,
+	full_name VARCHAR(40) NOT NULL,
+	dob DATE NOT NULL,
+)
+
+CREATE TABLE "Experience"
+(
+	experience_id INT IDENTITY PRIMARY KEY,
+	user_id INT NOT NULL REFERENCES "User" (user_id),
+	experience_points INT NOT NULL,
+	timestamp DATETIMEOFFSET(0) NOT NULL,
+)
+
+CREATE TABLE "Workout"
+(
+	workout_id INT IDENTITY PRIMARY KEY,
+	user_id INT NOT NULL REFERENCES "User" (user_id),
+	start_time DATETIMEOFFSET(0) NOT NULL,
+	end_time DATETIMEOFFSET(0),
+)
+
+CREATE TABLE "Exercise"
+(
+	exercise_id INT IDENTITY PRIMARY KEY,
+	workout_id INT NOT NULL REFERENCES "Workout" (workout_id),
+	type VARCHAR(40) NOT NULL,
+	name VARCHAR(40) NOT NULL,
+	description VARCHAR(80) NOT NULL,
+)
+
+CREATE TABLE "Set"
+(
+	set_id INT IDENTITY PRIMARY KEY,
+	exercise_id INT NOT NULL REFERENCES "Exercise" (exercise_id),
+	repetitions INT NOT NULL,
+	weight INT NOT NULL,
+)

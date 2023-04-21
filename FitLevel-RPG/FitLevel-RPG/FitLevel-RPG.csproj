@@ -8,11 +8,15 @@
     <UseWPF>true</UseWPF>
     <FileVersion></FileVersion>
     <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <Version>$(AssemblyVersion)-DEVBUILD</Version>
+    <Version>$(AssemblyVersion)</Version>
     <UserSecretsId>6b4a4542-ac8e-47d3-a723-81b81b60423e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>

@@ -4,10 +4,19 @@
     <_LastSelectedProfileId>C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="AddWorkout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PasswordReset\ChangePassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PlanNextWorkout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pre-Made Workouts\BeginnerCardio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pre-Made Workouts\IntermediateStarterWarmup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PreMadeWorkouts.xaml.cs">
@@ -31,15 +40,27 @@
     <Compile Update="UserDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkoutHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WorkoutsOverview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddWorkout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="PasswordReset\ChangePassword.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="PlanNextWorkout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pre-Made Workouts\BeginnerCardio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pre-Made Workouts\IntermediateStarterWarmup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PreMadeWorkouts.xaml">
@@ -61,6 +82,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkoutHistory.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WorkoutsOverview.xaml">

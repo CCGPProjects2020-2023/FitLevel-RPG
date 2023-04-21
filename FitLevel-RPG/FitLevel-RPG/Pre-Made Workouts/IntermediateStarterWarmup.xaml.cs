@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,18 +14,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Diagnostics;
-using System.Threading;
-using Timer = System.Timers.Timer;
 using System.Windows.Threading;
-using System.Data.SqlClient;
 
 namespace FitLevel_RPG.Pre_Made_Workouts
 {
     /// <summary>
-    /// Interaction logic for BeginnerCardio.xaml
+    /// Interaction logic for IntermediateStarterWarmup.xaml
     /// </summary>
-    public partial class BeginnerCardio : Page
+    public partial class IntermediateStarterWarmup : Page
     {
         DispatcherTimer t1 = new DispatcherTimer();
         Stopwatch sw;
@@ -32,7 +29,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
 
         int sessionXP = 5;
         string timeEstimate = "37 minutes";
-        public BeginnerCardio()
+        public IntermediateStarterWarmup()
         {
             InitializeComponent();
             xpRewardText.Visibility = Visibility.Hidden;
@@ -41,12 +38,12 @@ namespace FitLevel_RPG.Pre_Made_Workouts
             sw = new Stopwatch();
             t1 = new DispatcherTimer();
             //t1.Interval = new TimeSpan(0, 0, 1);
-            
+
             t1.Tick += T1_Tick;
             t1.Start();
         }
 
-        
+
         private void BeginButton_Click(object sender, RoutedEventArgs e)
         {
             sw.Start();
@@ -55,10 +52,10 @@ namespace FitLevel_RPG.Pre_Made_Workouts
         }
         private void T1_Tick(object sender, EventArgs e)
         {
-           
+
             TimeSpan ts = sw.Elapsed;
 
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);           
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
             timerTextBlock.Text = "Elapsed Time: " + elapsedTime;
         }
 
@@ -96,7 +93,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
                     }
                     else
                     {
-                        MessageBox.Show("Unkown error has occured.","Error");
+                        MessageBox.Show("Unkown error has occured.", "Error");
                     }
                 }
             } catch (Exception ex)

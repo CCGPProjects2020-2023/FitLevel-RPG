@@ -49,7 +49,7 @@ namespace FitLevel_RPG
                 {
                     // Login check
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM Accounts WHERE email=@email";
+                    String query = "SELECT COUNT(1) FROM [User] WHERE email=@email";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@email", TextboxEmail.Text);
@@ -66,7 +66,7 @@ namespace FitLevel_RPG
 
                             TextblockError.Visibility = Visibility.Hidden;
                             
-                            String vCodeUpdate = "UPDATE Accounts SET verifycode=@x WHERE email=@email";
+                            String vCodeUpdate = "UPDATE [User] SET verifycode=@x WHERE email=@email";
                             SqlCommand cmd2 = new SqlCommand(vCodeUpdate, sqlCon);
                             cmd2.CommandType = System.Data.CommandType.Text;
                             cmd2.Parameters.AddWithValue("@x", x);

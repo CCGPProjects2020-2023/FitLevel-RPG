@@ -13,7 +13,7 @@
         <Button x:Name="addExercise" Content="Add Exercise" HorizontalAlignment="Left" Margin="178,268,0,0" VerticalAlignment="Top"/>
         <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="530,300,0,0" VerticalAlignment="Top"/>
         <Button x:Name="planNextWorkout" Content="Plan Next Workout" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Click="BtnClickWorkoutHistory"/>
         <Button x:Name="setButton" Content="Sets" HorizontalAlignment="Left" Margin="178,243,0,0" VerticalAlignment="Top" Width="71"/>
 
     </Grid>

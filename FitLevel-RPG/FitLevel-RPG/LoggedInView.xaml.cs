@@ -20,6 +20,7 @@ namespace FitLevel_RPG
     public partial class LoggedInView : Window
     {
         public static string LoggedInUser { get; set; }
+        public static string LoggedInUserID { get; set; }
         
         public LoggedInView()
         {
@@ -43,7 +44,7 @@ namespace FitLevel_RPG
 
         private void WorkoutOverviewButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new WorkoutsOverview();
+            Main.Content = new PlanNextWorkout();
         }
 
         private void PremadeWorkoutsButton_Click(object sender, RoutedEventArgs e)

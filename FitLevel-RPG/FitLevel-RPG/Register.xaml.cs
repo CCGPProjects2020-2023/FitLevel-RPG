@@ -77,13 +77,13 @@ namespace FitLevel_RPG
                 {
                     // Login check
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM Accounts WHERE email=@email OR username=@username";
+                    String query = "SELECT COUNT(1) FROM [User] WHERE email=@email OR username=@username";
 
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@email", emailTextbox.Text);
                     cmd.Parameters.AddWithValue("@username", usernameTextBox.Text);
-                    cmd.Parameters.AddWithValue("@fullname", fullnameTextBox.Text);
+                    cmd.Parameters.AddWithValue("@full_name", fullnameTextBox.Text);
                     cmd.Parameters.AddWithValue("@dob", dobTextbox.Text);
                     cmd.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
 
@@ -98,16 +98,20 @@ namespace FitLevel_RPG
                     {
                         formInfoError.Visibility = Visibility.Hidden;
                         errorTextblock.Visibility = Visibility.Hidden;
-                        String createAccount = "INSERT INTO Accounts (username, email, name, dateofbirth, password, xp) VALUES (@username, @email, @fullname, @dob, @password, @xp)";
-                        SqlCommand cmd2 = new SqlCommand(createAccount, sqlCon);
-                        cmd2.CommandType = System.Data.CommandType.Text;
-                        cmd2.Parameters.AddWithValue("@email", emailTextbox.Text);
-                        cmd2.Parameters.AddWithValue("@username", usernameTextBox.Text);
-                        cmd2.Parameters.AddWithValue("@fullname", fullnameTextBox.Text);
-                        cmd2.Parameters.AddWithValue("@dob", dobTextbox.Text);
-                        cmd2.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
-                        cmd2.Parameters.AddWithValue("@xp", 0);
-                        cmd2.ExecuteScalar();
+                        String createLevel = "INSERT INTO Level (level_number, required_experience_points) VALUES (0, 100); SELECT SCOPE_IDENTITY();";
+                        SqlCommand cmd2 = new SqlCommand(createLevel, sqlCon);
+                        int levelId = Convert.ToInt32(cmd2.ExecuteScalar());
+
+                        String createUser = "INSERT INTO [User] (username, email, full_name, dob, password, level_id) VALUES (@username, @email, @full_name, @dob, @password, @level_id)";
+                        SqlCommand cmd3 = new SqlCommand(createUser, sqlCon);
+                        cmd3.CommandType = System.Data.CommandType.Text;
+                        cmd3.Parameters.AddWithValue("@email", emailTextbox.Text);
+                        cmd3.Parameters.AddWithValue("@username", usernameTextBox.Text);
+                        cmd3.Parameters.AddWithValue("@full_name", fullnameTextBox.Text);
+                        cmd3.Parameters.AddWithValue("@dob", dobTextbox.Text);
+                        cmd3.Parameters.AddWithValue("@password", passwordTextbox.Password.ToString());
+                        cmd3.Parameters.AddWithValue("@level_id", levelId);
+                        cmd3.ExecuteScalar();
                         MessageBox.Show("Account created!");
                         NavigationService.Navigate(new Uri("Login.xaml", UriKind.Relative));
 
@@ -117,12 +121,11 @@ namespace FitLevel_RPG
                         errorTextblock.Text = "Password cannot be blank or null.";
                         errorTextblock.Visibility = Visibility.Visible;
                     }
-                    else if(count == 0 && confirmPasswordTextbox.Password.ToString() != passwordTextbox.Password.ToString() && passwordCheckFail==true)
+                    else if(count == 0 && confirmPasswordTextbox.Password.ToString() != passwordTextbox.Password.ToString() && passwordCheckFail)
                     {
                         errorTextblock.Text = "Passwords do not match.";
                         errorTextblock.Visibility = Visibility.Visible;
                     }
-                    
                 }
             } catch (Exception ex)
             {
@@ -132,9 +135,6 @@ namespace FitLevel_RPG
             {
                 sqlCon.Close();
             }
-            
-            
-
         }
 
         private void CancelButtonClick(object sender, RoutedEventArgs e)

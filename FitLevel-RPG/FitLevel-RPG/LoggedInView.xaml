@@ -8,19 +8,18 @@
         Title="FitLevel RPG" Height="480" Width="900" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="23,66,10,10" Source="" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="259,10,0,0" TextWrapping="Wrap" Text="FitLevel RPG" VerticalAlignment="Top" FontSize="16" Grid.Column="1" Height="21" Width="87"/>
-        <Button x:Name="Dashboard" Content="Dashboard" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="DashboardButton_Click"/>
-        <Button x:Name="TrackWorkout" Content="Track Workout" HorizontalAlignment="Center" Margin="0,97,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="TrackWorkoutButton_Click"/>
-        <Button x:Name="WorkoutOverview" Content="Workout Overview" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="WorkoutOverviewButton_Click"/>
-        <Button x:Name="PreMadeWorkout" Content="Pre-Made Workout" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="PremadeWorkoutsButton_Click"/>
-        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Width="108" Click="LogoutButton_Click" Height="41"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Margin="154,66,10,10" Source=""/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" Text="FitLevel RPG" VerticalAlignment="Top" FontSize="16" Height="21" Width="87"/>
+        <Button x:Name="Dashboard" Content="Dashboard" HorizontalAlignment="Left" Margin="16,45,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="DashboardButton_Click"/>
+        <Button x:Name="TrackWorkout" Content="Track Workout" HorizontalAlignment="Left" Margin="16,97,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="TrackWorkoutButton_Click"/>
+        <Button x:Name="WorkoutOverview" Content="Workout Overview" HorizontalAlignment="Left" Margin="16,149,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="WorkoutOverviewButton_Click"/>
+        <Button x:Name="PreMadeWorkout" Content="Pre-Made Workout" HorizontalAlignment="Left" Margin="16,201,0,0" VerticalAlignment="Top" Width="108" Height="41" Click="PremadeWorkoutsButton_Click"/>
+        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="16,253,0,0" VerticalAlignment="Top" Width="108" Click="LogoutButton_Click" Height="41"/>
 
-        <TextBlock x:Name="versionInfo" HorizontalAlignment="Center" Margin="0,376,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="114" Height="30" FontSize="10"/>
-        <TextBlock x:Name="welcomeTextBlock" HorizontalAlignment="Left" Margin="12,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="16" Width="49"/>
+        <TextBlock x:Name="versionInfo" HorizontalAlignment="Left" Margin="14,376,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="114" Height="30" FontSize="10"/>
+        <TextBlock x:Name="welcomeTextBlock" HorizontalAlignment="Left" Margin="16,14,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="21" Width="149" Foreground="#FF9C17BB"/>
 
     </Grid>
 </Window>
