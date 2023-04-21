@@ -69,36 +69,28 @@ namespace FitLevel_RPG.Pre_Made_Workouts
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
-                    // Login check
+                    // NEEDS TO BE UPDATED WITH NEW SQL QUERIES
                     sqlCon.Open();
-                    String query = "SELECT COUNT(1) FROM [User] WHERE username=@username";
-                    SqlCommand cmd = new SqlCommand(query, sqlCon);
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
-                    if (count == 1)
-                    {
-                        // NEEDS TO BE UPDATED WITH NEW SQL QUERIES
+                    ButtonEnd.IsEnabled = false;
+                    String xpUpdate = "INSERT INTO Experience (experience_points, user_id, timestamp)  VALUES (@xpAmount, @user_id, @timestamp)";
+                    SqlCommand cmd2 = new SqlCommand(xpUpdate, sqlCon);
+                    cmd2.CommandType = System.Data.CommandType.Text;
+                    cmd2.Parameters.AddWithValue("@xpAmount", sessionXP);
+                    cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
+                    cmd2.Parameters.AddWithValue("@timestamp", DateTime.Now);
+                    cmd2.ExecuteScalar();
+                    xpRewardText.Text = "For completing the workout, you have been awarded " + sessionXP + " experience!";
+                    xpRewardText.Visibility = Visibility.Visible;
+                }
 
-                        ButtonEnd.IsEnabled = false;
-                        /*String xpUpdate = "UPDATE Experience SET experience_points + @xpAmount WHERE user_id=@user_id";
-                        SqlCommand cmd2 = new SqlCommand(xpUpdate, sqlCon);
-                        cmd2.CommandType = System.Data.CommandType.Text;
-                        cmd2.Parameters.AddWithValue("@xpAmount", sessionXP);
-                        cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
-                        cmd2.ExecuteScalar();*/
-                        xpRewardText.Text = "For completing the workout, you have been awarded " + sessionXP + " experience!";
-                        xpRewardText.Visibility = Visibility.Visible;
+                else
+                {
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Unkown error has occured.", "Error");
-                    }
+                    MessageBox.Show("Unkown error has occured.", "Error");
                 }
             } catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error");
             }
             finally
             {

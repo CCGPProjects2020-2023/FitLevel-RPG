@@ -52,6 +52,8 @@ namespace FitLevel_RPG
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
                 cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                
+                
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
 
