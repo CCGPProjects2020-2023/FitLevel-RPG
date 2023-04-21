@@ -160,50 +160,6 @@ C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.pdb
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.exe
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.deps.json
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.runtimeconfig.json
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.pdb
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.AssemblyReference.cache
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.cache
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.lref
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.g.resources
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.AssemblyInfoInputs.cache
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.AssemblyInfo.cs
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.CoreCompileInputs.cache
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.CopyComplete
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\refint\FitLevel-RPG.dll
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.pdb
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
-C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.exe
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.deps.json
 C:\Users\evanm\Desktop\New folder\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.runtimeconfig.json
@@ -519,6 +475,11 @@ E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.baml
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.exe
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.deps.json
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.runtimeconfig.json
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.pdb
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\Castle.Core.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\EntityFramework.dll
@@ -548,8 +509,12 @@ C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -573,19 +538,54 @@ C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.AssemblyReference.cache
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PlanNextWorkout.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.g.cs
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.cache
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG_MarkupCompile.lref
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\LoggedInView.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Login.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ChangePassword.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\ResetPassword.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PasswordReset\VerifyCode.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PlanNextWorkout.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\BeginnerCardio.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\PreMadeWorkouts.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Register.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\TrackWorkout.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\UserDashboard.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutHistory.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\WorkoutsOverview.baml
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.g.resources
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.AssemblyInfoInputs.cache
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.AssemblyInfo.cs
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.CoreCompileInputs.cache
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.csproj.CopyComplete
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\refint\FitLevel-RPG.dll
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.pdb
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLevel-RPG.genruntimeconfig.cache
+C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
