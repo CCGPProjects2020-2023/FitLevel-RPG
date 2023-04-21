@@ -21,15 +21,15 @@ CREATE TABLE "Experience"
 	experience_id INT IDENTITY PRIMARY KEY,
 	user_id INT NOT NULL REFERENCES "User" (user_id),
 	experience_points INT NOT NULL,
-	timestamp DATETIMEOFFSET(0) NOT NULL,
+	timestamp DATETIME NOT NULL,
 )
 
 CREATE TABLE "Workout"
 (
 	workout_id INT IDENTITY PRIMARY KEY,
 	user_id INT NOT NULL REFERENCES "User" (user_id),
-	start_time DATETIMEOFFSET(0) NOT NULL,
-	end_time DATETIMEOFFSET(0),
+	start_time DATETIME NOT NULL,
+	end_time DATETIME,
 )
 
 CREATE TABLE "Exercise"
