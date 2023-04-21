@@ -471,9 +471,7 @@ E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.g.cs
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
-E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.baml
 E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.baml
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.exe
 C:\Users\evanm\Desktop\New folder (4)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\FitLevel-RPG.deps.json
@@ -705,3 +703,7 @@ S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\FitLeve
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\ref\FitLevel-RPG.dll
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.g.cs
 S:\FitLevel-RPG REPOS\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddExercise.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.g.cs
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddExercise.baml
+E:\SoftwareDev1\FitLevel-RPG\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddSet.baml
