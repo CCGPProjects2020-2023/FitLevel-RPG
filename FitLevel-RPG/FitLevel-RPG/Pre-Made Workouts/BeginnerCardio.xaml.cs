@@ -40,7 +40,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
             timeEstimateText.Text = "Estimated time to complete: " + timeEstimate;
             sw = new Stopwatch();
             t1 = new DispatcherTimer();
-            //t1.Interval = new TimeSpan(0, 0, 1);
+            //t1.Interval = new TimeSpan(0, 0, 1); // This will set the amount of time between timer updates. Disabled for now as not needed.
 
             t1.Tick += T1_Tick;
             t1.Start();
@@ -72,7 +72,7 @@ namespace FitLevel_RPG.Pre_Made_Workouts
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
-                    // NEEDS TO BE UPDATED WITH NEW SQL QUERIES
+                    
                     sqlCon.Open();
                     ButtonEnd.IsEnabled = false;
                     String xpUpdate = "INSERT INTO Experience (experience_points, user_id, timestamp)  VALUES (@xpAmount, @user_id, @timestamp)";
