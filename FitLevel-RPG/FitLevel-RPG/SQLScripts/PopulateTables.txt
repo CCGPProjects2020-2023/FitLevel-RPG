@@ -1,6 +1,6 @@
 ﻿INSERT INTO Level (level_number, required_experience_points) 
-VALUES (3, 100),
-		(5, 100),
+VALUES (1, 100),
+		(2, 100)
 
 INSERT INTO [User] (level_id, username, password, email, full_name, dob) 
 VALUES (2, 'person1', 'password', 'person1@email.com', 'Person 1', '2000-01-01'),
@@ -27,19 +27,19 @@ VALUES (1, 'weights', 'Squats', 'description'),
 	 (3, 'weights', 'Bench Press', 'description')
 
 INSERT INTO [Set] (exercise_id, repetitions, weight)
-VALUES (1, 5, 85),
-	 (1, 5, 135),
+VALUES (1, 5, 135),
+	 (1, 5, 225),
 	 (2, 5, 85),
 	 (2, 5, 135),
-	 (3, 5, 85),
 	 (3, 5, 135),
+	 (3, 5, 225),
 	 (4, 5, 85),
 	 (4, 5, 135),
-	 (5, 5, 85),
-	 (5, 5, 135),
-	 (6, 5, 85),
-	 (6, 5, 135),
-	 (7, 5, 85),
-	 (7, 5, 135),
-	 (8, 5, 85),
-	 (8, 5, 135)
+	 (5, 5, 225),
+	 (5, 5, 315),
+	 (6, 5, 15),
+	 (6, 5, 25),
+	 (7, 5, 100),
+	 (7, 5, 150),
+	 (8, 5, 75),
+	 (8, 5, 105)

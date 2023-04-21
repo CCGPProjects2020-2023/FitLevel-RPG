@@ -39,6 +39,7 @@ CREATE TABLE "Exercise"
 	type VARCHAR(40) NOT NULL,
 	name VARCHAR(40) NOT NULL,
 	description VARCHAR(80) NOT NULL,
+	is_planned BIT,
 )
 
 CREATE TABLE "Set"

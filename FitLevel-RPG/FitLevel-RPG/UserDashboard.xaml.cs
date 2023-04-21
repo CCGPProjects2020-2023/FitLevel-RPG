@@ -15,11 +15,8 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class UserDashboard : Page
     {
-        float currentXP = 80f;
         float nextLevelXP = 100f;
-        int currentLevel = 1;
-
-        int totalExperience = 0;
+        float totalExperience = 0f;
         int levelNumber = 0;
 
         List<DateTime> dates = new();
@@ -61,16 +58,20 @@ namespace FitLevel_RPG
                     
                     // Calculate total training volume per workout
                     String query2 = @"
-                        SELECT W.user_id, SUM(S.repetitions * S.weight) AS volume
-                        FROM Workout W
-                        JOIN Exercise E ON W.workout_id = E.workout_id
-                        JOIN [Set] S ON E.exercise_id = S.exercise_id
-                        GROUP BY W.user_id
-                        ORDER BY W.user_id";
-                   
-                    
-                    SqlCommand cmd2 = new(query2, sqlCon2);
-                    cmd.CommandType = System.Data.CommandType.Text;
+                        SELECT W.end_time, SUM(S.repetitions * S.weight) AS volume
+                            FROM Workout W
+                            JOIN Exercise E ON W.workout_id = E.workout_id
+                            JOIN [Set] S ON E.exercise_id = S.exercise_id
+                            WHERE W.user_id = @user_id
+                            GROUP BY W.workout_id, W.end_time
+                            ORDER BY W.workout_id";
+
+
+                    SqlCommand cmd2 = new(query2, sqlCon2)
+                    {
+                        CommandType = System.Data.CommandType.Text
+                    };
+                    cmd2.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
 
                     using SqlDataReader reader2 = cmd2.ExecuteReader();
                     while (reader2.Read())
@@ -92,30 +93,46 @@ namespace FitLevel_RPG
             {
                 sqlCon.Close();
                 sqlCon2.Close();
-
-
             }
 
             var lastDatesValues = dates.Skip(Math.Max(0, dates.Count - 10)).Take(10);
             var lastVolumesValues = volumes.Skip(Math.Max(0, volumes.Count - 10)).Take(10);
             var plotModel = new PlotModel
             {
-                Title = "Example Plot",             // Reduce the padding and margin around the plot area
+                Title = "Training Volume",             // Reduce the padding and margin around the plot area
                 Padding = new OxyThickness(50),
                 PlotMargins = new OxyThickness(0),
                 PlotAreaBorderThickness = new OxyThickness(0)
             };
 
-            var lineSeries = new LineSeries();
+            var xAxis = new DateTimeAxis
+            {
+                Position = AxisPosition.Bottom,
+                StringFormat = "yyyy-MM-dd HH:mm:ss",
+            };
 
+            plotModel.Axes.Add(xAxis);
+
+            var scatterSeries = new ScatterSeries();
             for (int i = 0; i < lastVolumesValues.Count(); i++)
             {
-                lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(lastDatesValues.ElementAt(i)), lastVolumesValues.ElementAt(i)));
+                scatterSeries.Points.Add(new ScatterPoint(DateTimeAxis.ToDouble(lastDatesValues.ElementAt(i)), lastVolumesValues.ElementAt(i)));
             }
+            plotModel.Series.Add(scatterSeries);
 
-            plotModel.Series.Add(lineSeries);
+
+            //var lineSeries = new LineSeries();
+
+            //for (int i = 0; i < lastVolumesValues.Count(); i++)
+            //{
+            //    lineSeries.Points.Add(new DataPoint(DateTimeAxis.ToDouble(lastDatesValues.ElementAt(i)), lastVolumesValues.ElementAt(i)));
+            //}
+
+            //plotModel.Series.Add(lineSeries);
 
             MyPlot.Model = plotModel;
+
+            float currentXP = totalExperience % nextLevelXP;
 
             currentUserLevel.Content = "Current Lvl: " + levelNumber;
             currentXpLabel.Content = "Current XP: " + currentXP;
