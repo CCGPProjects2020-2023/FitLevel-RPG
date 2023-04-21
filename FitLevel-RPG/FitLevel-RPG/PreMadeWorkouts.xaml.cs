@@ -27,7 +27,7 @@ namespace FitLevel_RPG
             };
         List<ItemList> IntermediateList = new List<ItemList>()
             {
-                new ItemList(){ Workout="(Not Active Yet)Intermediate Starter Warmup", Description="Simple intermediate warmup."}
+                new ItemList(){ Workout="Intermediate Starter Warmup", Description="Simple intermediate warmup."}
             };
         List<ItemList> AdvancedList = new List<ItemList>()
             {
@@ -69,6 +69,13 @@ namespace FitLevel_RPG
                 if (listView.SelectedIndex == 0)
                 {
                     NavigationService.Navigate(new Uri("./Pre-Made Workouts/BeginnerCardio.xaml", UriKind.Relative));
+                }
+            }
+            if(difficultyComboBox.Text == "Intermediate")
+            {
+                if(listView.SelectedIndex == 0)
+                {
+                    NavigationService.Navigate(new Uri("./Pre-Made Workouts/IntermediateStarterWarmup.xaml", UriKind.Relative));
                 }
             }
             

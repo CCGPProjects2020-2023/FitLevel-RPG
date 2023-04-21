@@ -42,15 +42,21 @@ namespace FitLevel_RPG
                     // Login check
                     sqlCon.Open();
                     String query = "SELECT COUNT(1) FROM [User] WHERE username=@username AND password=@password";
+                    String query2 = "SELECT user_id FROM [User] WHERE username=@username";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@username", TextboxUsername.Text);
                     cmd.Parameters.AddWithValue("@password", TextboxPassword.Password.ToString());
+
+                    
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
                     if(count == 1)
                     {
+                        SqlCommand cmd2 = new SqlCommand(query2, sqlCon);
+                        cmd2.Parameters.AddWithValue("@username", TextboxUsername.Text);
                         MessageBox.Show("Logged in successfully!\nClick OK to continue.","Login Success",MessageBoxButton.OK,MessageBoxImage.Information);
                         LoggedInView.LoggedInUser = TextboxUsername.Text;
+                        LoggedInView.LoggedInUserID = Convert.ToString(cmd2.ExecuteScalar());
                         LoggedInView dashboard = new LoggedInView();
                         var parentWindow = Window.GetWindow(this);
                         dashboard.Show();

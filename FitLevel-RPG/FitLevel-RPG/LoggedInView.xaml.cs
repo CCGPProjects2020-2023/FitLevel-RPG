@@ -20,6 +20,7 @@ namespace FitLevel_RPG
     public partial class LoggedInView : Window
     {
         public static string LoggedInUser { get; set; }
+        public static string LoggedInUserID { get; set; }
         
         public LoggedInView()
         {

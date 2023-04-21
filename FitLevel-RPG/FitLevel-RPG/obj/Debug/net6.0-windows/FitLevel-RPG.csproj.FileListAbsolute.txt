@@ -466,3 +466,5 @@ C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.g.cs
 C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\AddWorkout.baml
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.g.cs
+C:\Users\evanm\Desktop\New folder (3)\FitLevel-RPG\FitLevel-RPG\obj\Debug\net6.0-windows\Pre-Made Workouts\IntermediateStarterWarmup.baml

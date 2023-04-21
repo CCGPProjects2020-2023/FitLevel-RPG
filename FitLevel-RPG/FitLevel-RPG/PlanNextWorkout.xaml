@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:FitLevel_RPG"
       mc:Ignorable="d" 
       d:DesignHeight="368" d:DesignWidth="684"
-      Title="PlanNextWorkout">
+      Title="Track Workout">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="300,36,0,0" TextWrapping="Wrap" Text="Plan Next Workout" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="300,36,0,0" TextWrapping="Wrap" Text="Track Workout" VerticalAlignment="Top" FontSize="18"/>
 
-        <Button x:Name="addExercise" Content="Add Exercise" HorizontalAlignment="Left" Margin="178,280,0,0" VerticalAlignment="Top" Click="addExercise_Click" Width="112"/>
-        <Button x:Name="saveButton" Content="Update Workouts" HorizontalAlignment="Left" Margin="178,307,0,0" VerticalAlignment="Top" Width="112" Click="saveButton_Click"/>
+        <Button x:Name="addExercise" Content="Add Workout" HorizontalAlignment="Left" Margin="178,280,0,0" VerticalAlignment="Top" Click="addExercise_Click" Width="112"/>
+        <Button x:Name="saveButton" Content="Update Data" HorizontalAlignment="Left" Margin="178,307,0,0" VerticalAlignment="Top" Width="112" Click="saveButton_Click"/>
         <Button x:Name="planNextWorkout" Content="Plan Next Workout" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top"/>
         <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top" Click="BtnClickWorkoutHistory"/>
         <Button x:Name="setButton" Content="Sets" HorizontalAlignment="Left" Margin="178,255,0,0" VerticalAlignment="Top" Width="71"/>
