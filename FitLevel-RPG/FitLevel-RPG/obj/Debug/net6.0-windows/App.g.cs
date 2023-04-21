@@ -60,7 +60,7 @@ namespace FitLevel_RPG {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.4.0")]
         public static void Main() {
             FitLevel_RPG.App app = new FitLevel_RPG.App();
             app.InitializeComponent();

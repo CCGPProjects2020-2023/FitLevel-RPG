@@ -51,7 +51,7 @@ namespace FitLevel_RPG
                 CmdString = "SELECT id AS [ID], wset AS [Set], sreps AS Reps, sweight AS Weight, CONVERT(VARCHAR(10), createdate ,111) AS Date FROM WorkoutPlan WHERE username=@username";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
-                cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);
+                cmd.Parameters.AddWithValue("@username", LoggedInView.LoggedInUser);              
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
 
