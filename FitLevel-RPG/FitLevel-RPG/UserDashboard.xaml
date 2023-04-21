@@ -9,8 +9,23 @@
       Title="UserDashboard">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" Text="DASHBOARD" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="191,88,0,0" TextWrapping="Wrap" Text="Welcome to your Dashboard! Here you will be able to see all your level progress as well as metrics of how your fitness is progressing." VerticalAlignment="Top" Height="106" Width="418"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" Text="DASHBOARD" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="191,50,0,0" TextWrapping="Wrap" Text="Welcome to your Dashboard! Here you will be able to see all your level progress as well as metrics of how your fitness is progressing." VerticalAlignment="Top" Height="33" Width="418"/>
+        <ProgressBar x:Name="xpBar" HorizontalAlignment="Center" Height="27" Margin="0,127,0,0" VerticalAlignment="Top" Width="468"/>
+        <Label x:Name="currentXpLabel" Content="Label" HorizontalAlignment="Left" Margin="138,154,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="xpPercentLabel" Content="% Placeholder" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="requiredXpLabel" Content="Label" HorizontalAlignment="Left" Margin="485,154,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="currentUserLevel" Content="Label" HorizontalAlignment="Left" Margin="138,101,0,0" VerticalAlignment="Top"/>
+        <Separator HorizontalAlignment="Center" Margin="0,69,0,0" VerticalAlignment="Top" Height="48" Width="743" RenderTransformOrigin="0.5,0.5" FontSize="18">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.178"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-1.096"/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
 
     </Grid>
 </Page>

@@ -20,9 +20,17 @@ namespace FitLevel_RPG
     /// </summary>
     public partial class UserDashboard : Page
     {
+        float currentXP = 80f;
+        float nextLevelXP = 100f;
+        int currentLevel = 1;
         public UserDashboard()
         {
             InitializeComponent();
+            currentUserLevel.Content = "Current Lvl: " + currentLevel;
+            currentXpLabel.Content = "Current XP: " + currentXP;
+            requiredXpLabel.Content = "Next Level at: " + nextLevelXP + " XP";
+            xpPercentLabel.Content = "Level Progress - " + (currentXP / nextLevelXP * 100) + "%";
+            xpBar.Value = currentXP;
         }
     }
 }
