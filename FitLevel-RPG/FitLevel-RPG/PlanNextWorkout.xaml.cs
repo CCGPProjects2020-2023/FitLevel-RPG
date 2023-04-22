@@ -56,8 +56,8 @@ namespace FitLevel_RPG
                 {
                     // NEEDS FIXED. SQL IS IN WRONG ORDER I THINK
                     sqlCon.Open();
-                    String startWorkoutQuery = "INSERT INTO Workout (user_id, start_time) VALUES (@user_id, @start_time); SELECT SCOPE_IDENTITY();";
-                    SqlCommand cmd = new SqlCommand(startWorkoutQuery, sqlCon);
+                    String startExerciseQuery = "INSERT INTO Workout (user_id, start_time) VALUES (@user_id, @start_time); SELECT SCOPE_IDENTITY();";
+                    SqlCommand cmd = new SqlCommand(startExerciseQuery, sqlCon);
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
                     cmd.Parameters.AddWithValue("@start_time", DateTime.Now);
@@ -85,7 +85,7 @@ namespace FitLevel_RPG
 
             {
                 //FIX
-                CmdString = "SELECT Exercise.type AS type, Exercise.name AS name, Exercise.description AS description FROM Exercise";
+                CmdString = "SELECT Exercise.type AS type, Exercise.name AS name, Exercise.description AS description FROM Exercise WHERE is_planned = 1";
 
                 SqlCommand cmd = new SqlCommand(CmdString, sqlCon);
                 cmd.Parameters.AddWithValue("@user_id", LoggedInView.LoggedInUserID);
