@@ -133,11 +133,10 @@ namespace FitLevel_RPG
             MyPlot.Model = plotModel;
 
             float currentXP = totalExperience % nextLevelXP;
-
             currentUserLevel.Content = "Current Lvl: " + levelNumber;
-            currentXpLabel.Content = "Current XP: " + currentXP;
-            requiredXpLabel.Content = "Next Level at: " + nextLevelXP + " XP";
-            xpPercentLabel.Content = "Level Progress - " + (currentXP / nextLevelXP * 100) + "%";
+            currentXpLabel.Content = "Current XP: " + currentXP.ToString("#.#");
+            requiredXpLabel.Content = "Next Level at: " + nextLevelXP.ToString("#.#") + " XP";
+            xpPercentLabel.Content = "Level Progress - " + (currentXP / nextLevelXP * 100).ToString("#") + "%";
             xpBar.Value = currentXP;
 
             

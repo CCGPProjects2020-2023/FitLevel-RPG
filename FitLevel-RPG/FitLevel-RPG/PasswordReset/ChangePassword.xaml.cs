@@ -27,7 +27,7 @@ namespace FitLevel_RPG
         {
             InitializeComponent();
             TextblockInfo.Text = "Please enter your new password.";
-            textBlockRules.Text = "- Password cannot be blank\n- Password must contain at least 5 characters";
+            textBlockRules.Text = "- Password cannot be blank\n- Password must contain at least 8 characters";
         }
 
         private void ChangePasswordButtonClick(object sender, RoutedEventArgs e)
@@ -51,11 +51,11 @@ namespace FitLevel_RPG
                         TextblockError.Visibility = Visibility.Visible;
                         TextblockError.Text = "Password cannot be null or empty.";
                     }
-                    else if(count == 1 && TextboxConfirmPassword.Password.ToString().Length < 5 && TextboxPassword.Password.ToString().Length < 5)
+                    else if(count == 1 && TextboxConfirmPassword.Password.ToString().Length < 8 && TextboxPassword.Password.ToString().Length < 8)
                     {
-                       // MessageBox.Show("Password does not meet requirements.\nPassword MUST contain at least 5 characters.", "Invalid Character Count");
+                       // MessageBox.Show("Password does not meet requirements.\nPassword MUST contain at least 8 characters.", "Invalid Character Count");
                         TextblockError.Visibility = Visibility.Visible;
-                        TextblockError.Text = "Password MUST contain at least 5 characters.";
+                        TextblockError.Text = "Password MUST contain at least 8 characters.";
                     }
                     else
                     {

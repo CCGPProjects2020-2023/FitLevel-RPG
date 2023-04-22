@@ -7,6 +7,12 @@
     <Compile Update="AddExercise.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddPlannedExercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddPlannedSet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddSet.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddExercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddPlannedExercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddPlannedSet.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddSet.xaml">

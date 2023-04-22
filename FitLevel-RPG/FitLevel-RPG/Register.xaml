@@ -28,7 +28,7 @@
         <DatePicker x:Name="dobTextbox" HorizontalAlignment="Left" Margin="250,179,0,0" VerticalAlignment="Top" Width="158"/>
         <TextBlock x:Name="errorTextblock" HorizontalAlignment="Left" Margin="250,262,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFEF5555" Visibility="Hidden"/>
         <TextBlock x:Name="pageInfoText" HorizontalAlignment="Left" Margin="205,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFDA8926"><Run Text="All fields must be filled out to register."/><LineBreak/><Run/></TextBlock>
-        <TextBlock x:Name="passwordInfoText" HorizontalAlignment="Left" Margin="410,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFDA8926"><Run Text="(Must be 5+ characters long)"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="passwordInfoText" HorizontalAlignment="Left" Margin="410,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFDA8926"><Run Text="(Must be 8+ characters long)"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="formInfoError" HorizontalAlignment="Left" Margin="202,76,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFEF5555" Visibility="Hidden"/>
     </Grid>
 </Page>
