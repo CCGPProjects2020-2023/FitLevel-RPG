@@ -12,6 +12,6 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="300,36,0,0" TextWrapping="Wrap" Text="Workouts History" VerticalAlignment="Top" FontSize="18"/>
         <Button x:Name="planNextWorkout" Content="Plan Next Workout" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top" Click="BtnClickPlanNextWorkout"/>
         <Button x:Name="workoutHistory" Content="Workout History" HorizontalAlignment="Left" Margin="342,66,0,0" VerticalAlignment="Top"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="144,113,144,113"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="178,100,92,126" SelectionChanged="dataGrid_SelectionChanged"/>
     </Grid>
 </Page>
