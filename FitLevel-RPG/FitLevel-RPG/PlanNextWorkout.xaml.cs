@@ -29,13 +29,11 @@ namespace FitLevel_RPG
         {
             InitializeComponent();
             FillData();
-
         }
 
         // ID Containers
         static public int workoutID;
         static public int exerciseID;
-
 
         private void BtnClickWorkoutHistory(object sender, RoutedEventArgs e)
         {
@@ -49,7 +47,6 @@ namespace FitLevel_RPG
 
         private void FillData()
         {
-
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
@@ -66,7 +63,6 @@ namespace FitLevel_RPG
 
                 else
                 {
-
                     MessageBox.Show("Unkown error has occured.", "Error");
                 }
             }
@@ -93,7 +89,6 @@ namespace FitLevel_RPG
                 sda.Fill(dt);
 
                 dataGrid.ItemsSource = dt.DefaultView;
-
             }
         }
 
@@ -106,15 +101,12 @@ namespace FitLevel_RPG
         // FUTURE FEATURE - Delete
         private void deletePlanButton_Click(object sender, RoutedEventArgs e)
         {
-         
             //Needs adjustments
             SqlConnection sqlCon = new SqlConnection(@"Data Source=fitlevelrpg1.database.windows.net;Initial Catalog=FitLevelRPG;User ID=rpglogin;Password=HiQ!w2g6SFS;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                 {
-                    
-
                     sqlCon.Open();
                     String query = "SELECT COUNT(1) FROM Workout WHERE workout_id=@workout_id";
                     SqlCommand cmd = new SqlCommand(query, sqlCon);
