@@ -43,3 +43,7 @@ VALUES (1, 5, 135),
 	 (7, 5, 150),
 	 (8, 5, 75),
 	 (8, 5, 105)
+
+INSERT INTO PreMade (premade_name, premade_description, difficulty)
+VALUES ('BeginnerCardio', 'Beginner Cardio Description', 'Beginner'),
+	('IntermediateStarterWarmup', 'Intermediate Starter Warmup Description', 'Intermediate')
